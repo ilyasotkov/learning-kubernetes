@@ -1,4 +1,4 @@
-# Learning Kubernetes Deployment Framework
+# Learning Kubernetes
 
 After learning *Docker Swarm mode*, I came to the conclusion that it has great potential, but not ready yet as a product.
 
