@@ -27,4 +27,4 @@ spec:
       volumes:
         - name: root-html
           hostPath:
-            path: /Users/Ilya/Developer/learn-kubernetes/html
+            path: /Users/Ilya/Developer/learn-kubernetes/1-nginx/html
