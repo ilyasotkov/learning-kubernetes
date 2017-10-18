@@ -1,20 +1,24 @@
 # Learning Kubernetes
 
-After learning *Docker Swarm mode*, I came to the conclusion that it has great potential, but not ready yet as a product.
+Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
 
-Kubernetes seems like a non-native feature that has existed for a much longer time and has a lot of followers.
+Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
 
-It is thought to be more complex but also more configurable that *Docker Swarm mode*.
-
-## First NGINX Kubernetes deployment
+## 1 - nginx
 
 ```sh
-minikube status
-kubectl get nodes
+# Get it rolling
+kubectl create -f nginx-deployment.yaml
+kubectl replace -f nginx-deployment.yaml
+kubectl delete deployment nginx-deployment
+#
+# Other commands:
+# Check that we can access Kubernetes API
 kubectl cluster-info
+# Grab IP address of the Minikube cluster
+minikube status
+# List active deployments
 kubectl get deployments
 kubectl get deployment nginx-deployment
 kubectl describe services
-kubectl create -f nginx-deployment.yaml
-kubectl replace -f nginx-deployment.yaml
 ```
