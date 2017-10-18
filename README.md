@@ -4,21 +4,21 @@ Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has s
 
 Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
 
-## 1 - nginx
+## 1-nginx
 
 ```sh
-# Get it rolling
-kubectl create -f nginx-deployment.yaml
-kubectl replace -f nginx-deployment.yaml
-kubectl delete deployment nginx-deployment
-#
-# Other commands:
-# Check that we can access Kubernetes API
-kubectl cluster-info
-# Grab IP address of the Minikube cluster
+# Get Minikube IP address
 minikube status
-# List active deployments
+# Create deployment
+kubectl create -f nginx-deployment.yaml
+# Replace deployment (with downtime)
+kubectl replace -f nginx-deployment.yaml
+# Delete existing deployment
+kubectl delete deployment nginx-deployment
+
+# Misc:
+kubectl cluster-info
 kubectl get deployments
 kubectl get deployment nginx-deployment
-kubectl describe services
+kubectl describe deployments
 ```
