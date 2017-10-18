@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: nginx
@@ -20,3 +20,11 @@ spec:
           ports:
             - containerPort: 80
               hostPort: 80
+          volumeMounts:
+            - mountPath: /usr/share/nginx/html
+              name: root-html
+
+      volumes:
+        - name: root-html
+          hostPath:
+            path: /Users/Ilya/Developer/learn-kubernetes/html
