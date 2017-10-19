@@ -1,3 +1,4 @@
+![Kubernetes logo.](/artwork/icon.png)
 # Learning Kubernetes
 
 Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
