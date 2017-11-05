@@ -1,11 +1,17 @@
 ![Kubernetes logo.](/diagrams/icon.png)
-# Learning Kubernetes
 
+# 🐳 Learning Kubernetes ☸️
 **Goal:** Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
 
-🐳🐳🐳 + ☸️☸️☸️ = 🔥
+## ⚠️ State of matters as of November 2017 ⚠️
 
-🎉 **Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker.** 🎉
+- I've decided to put learning Kubernetes on hold indefinetely (= I see no reason to bother doing it) as it just seems unnecessary complex while offering no significant benefits compared to Docker Swarm Mode. In other words, **I've decided to abandon the project**.
+
+- Learn **Docker Swarm Mode**:
+  * <https://docs.docker.com/compose/compose-file/>
+  * <https://docs.docker.com/compose/swarm/>
+
+- **Interesting:** Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker. Read: <https://blog.docker.com/2017/10/kubernetes-docker-platform-and-moby-project/>
 
 ## Introduction to Kubernetes
 
