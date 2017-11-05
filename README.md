@@ -1,13 +1,15 @@
 ![Kubernetes logo.](/artwork/icon.png)
 # Learning Kubernetes
 
-🐳🐳🐳 + ☸️☸️☸️
+Goal: Get familiar with *all of the* [Kubernetes Docs](https://kubernetes.io/docs)
+
+🐳🐳🐳 + ☸️☸️☸️ = ❤️
 **(!) Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker.**
 
 
 Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
 
-Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Modde*.
+Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
 
 ![The new containerized paradigm.](/diagrams/containerized-model.png)
 
