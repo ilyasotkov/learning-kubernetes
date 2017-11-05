@@ -17,7 +17,7 @@ spec:
       containers:
         - name: nginx
           image: my-kube-nginx:latest
-          imagePullPolicy: Never # to use registries
+          imagePullPolicy: Never # so we can use a local image
           ports:
             - containerPort: 80
               hostPort: 8004
