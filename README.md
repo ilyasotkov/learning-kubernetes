@@ -141,3 +141,11 @@ Core terminlogy / concepts:
 1. Object configuration file / configuration file to pass to `kubectl apply`.
 2. Live configuration (stored in etcd at runtime).
 3. Declarative configuration writer (the person or software component who makes the changes to *ojbect configuration files*.
+
+### NGINX example for testing / development
+
+```sh
+cd 1-nginx
+eval $(minikube docker-env) && docker build -t my-kube-nginx:latest .
+kubectl apply -f kube-files/
+```

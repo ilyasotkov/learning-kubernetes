@@ -16,15 +16,8 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:1.13.5-alpine
+          image: my-kube-nginx:latest
+          imagePullPolicy: Never # to use registries
           ports:
             - containerPort: 80
-              hostPort: 8002
-          volumeMounts:
-            - mountPath: /usr/share/nginx/html
-              name: root-html
-
-      volumes:
-        - name: root-html
-          hostPath:
-            path: /Users/Ilya/Developer/learning-kubernetes/1-nginx/html
+              hostPort: 8004
