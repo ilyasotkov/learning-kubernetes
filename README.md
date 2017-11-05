@@ -1,6 +1,8 @@
 ![Kubernetes logo.](/artwork/icon.png)
 # Learning Kubernetes
 
+🤠🤠🤠 **(!) Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker.**
+
 Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
 
 Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
@@ -82,6 +84,4 @@ kubectl label pod $POD_NAME app=v1
 
 kubectl delete service -l run=kubernetes-bootcamp
 kubectl get services
-
-
 ```
