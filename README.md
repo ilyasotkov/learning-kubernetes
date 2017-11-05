@@ -113,7 +113,7 @@ kubectl delete service -l run=kubernetes-bootcamp
 kubectl get services
 ```
 
-## Deploying NGINX declaratively (1-nginx)
+## Imperative commands sample for NGINX deployment
 
 ```sh
 # Get Minikube IP address
@@ -132,6 +132,12 @@ kubectl get deployment nginx-deployment
 kubectl describe deployments
 ```
 
-## Declarative management of Kubernetes objects
+## Declarative management of Kubernetes objects (kubectl apply)
 
 [https://kubernetes.io/docs/tutorials/object-management-kubectl/declarative-object-management-configuration/](https://kubernetes.io/docs/tutorials/object-management-kubectl/declarative-object-management-configuration/)
+
+Core terminlogy / concepts:
+
+1. Object configuration file / configuration file to pass to `kubectl apply`.
+2. Live configuration (stored in etcd at runtime).
+3. Declarative configuration writer (the person or software component who makes the changes to *ojbect configuration files*.
