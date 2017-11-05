@@ -1,36 +1,27 @@
-![Kubernetes logo.](/artwork/icon.png)
+![Kubernetes logo.](/diagrams/icon.png)
 # Learning Kubernetes
 
-Goal: Get familiar with *all of the* [Kubernetes Docs](https://kubernetes.io/docs)
+**Goal:** Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
 
-🐳🐳🐳 + ☸️☸️☸️ = ❤️
-**(!) Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker.**
+🐳🐳🐳 + ☸️☸️☸️ = 🔥
 
+🎉 **Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker.** 🎉
+
+## Introduction to Kubernetes
 
 Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
 
-Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
+Kubernetes is thought to be fmore complex but also more configurable than *Docker Swarm Mode*.
 
 ![The new containerized paradigm.](/diagrams/containerized-model.png)
 
-## 1-nginx
 
-```sh
-# Get Minikube IP address
-minikube status
-# Create deployment
-kubectl create -f nginx-deployment.yaml
-# Replace deployment (with downtime)
-kubectl replace -f nginx-deployment.yaml
-# Delete existing deployment
-kubectl delete deployment nginx-deployment
+## Kubernetes objects
 
-# Misc:
-kubectl cluster-info
-kubectl get deployments
-kubectl get deployment nginx-deployment
-kubectl describe deployments
-```
+A Kubernetes object is a “record of intent”–once you create the object, the Kubernetes system will constantly work to ensure that object exists. By creating an object, you’re effectively telling the Kubernetes system what you want your cluster’s workload to look like; this is your cluster’s **desired state**.
+
+
+
 
 ## 2-kubernetes-basics
 
@@ -90,6 +81,25 @@ kubectl label pod $POD_NAME app=v1
 
 kubectl delete service -l run=kubernetes-bootcamp
 kubectl get services
+```
+
+## Deploying NGINX declaratively (1-nginx)
+
+```sh
+# Get Minikube IP address
+minikube status
+# Create deployment
+kubectl create -f nginx-deployment.yaml
+# Replace deployment (with downtime)
+kubectl replace -f nginx-deployment.yaml
+# Delete existing deployment
+kubectl delete deployment nginx-deployment
+
+# Misc:
+kubectl cluster-info
+kubectl get deployments
+kubectl get deployment nginx-deployment
+kubectl describe deployments
 ```
 
 ## Declarative management of Kubernetes objects
