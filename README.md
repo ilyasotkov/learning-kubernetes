@@ -11,7 +11,7 @@
 
 Kubernetes has existed for a much longer time that *Docker Swarm Mode* and has since gathered a lot of followers. It has been tested thouroughly in production environments.
 
-Kubernetes is thought to be fmore complex but also more configurable than *Docker Swarm Mode*.
+Kubernetes is thought to be more complex but also more configurable than *Docker Swarm Mode*.
 
 ![The new containerized paradigm.](/diagrams/containerized-model.png)
 
@@ -20,8 +20,38 @@ Kubernetes is thought to be fmore complex but also more configurable than *Docke
 
 A Kubernetes object is a “record of intent”–once you create the object, the Kubernetes system will constantly work to ensure that object exists. By creating an object, you’re effectively telling the Kubernetes system what you want your cluster’s workload to look like; this is your cluster’s **desired state**.
 
+### Spec = Desired State
 
+A Kubernetes object's *Spec* is defined by us (in a *.yaml* file) and represents the state **we desire for the object to have**.
 
+A Kubernetes object's *Status* is that objects **actual state**.
+
+> For example, a Kubernetes Deployment is an object that can represent an application running on your cluster. When you create the Deployment, you might set the Deployment spec to specify that you want three replicas of the application to be running. The Kubernetes system reads the Deployment spec and starts three instances of your desired application–updating the status to match your spec. If any of those instances should fail (a status change), the Kubernetes system responds to the difference between spec and status by making a correction–in this case, starting a replacement instance.
+
+```yaml
+apiVersion: apps/v1beta2 # Kubernetes API Version
+kind: Deployment # Kind of Kubernetes Object
+metadata: # Data to help identify the object
+  name: nginx-deployment
+spec: # Description of the desired state
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.7.9
+        ports:
+        - containerPort: 80
+```
+
+```sh
+$ kubectl create -f 1-nginx/nginx-deployment.yaml --record
+
+deployment "nginx-deployment" created
+```
 
 ## 2-kubernetes-basics
 
