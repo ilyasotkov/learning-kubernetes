@@ -85,3 +85,7 @@ kubectl label pod $POD_NAME app=v1
 kubectl delete service -l run=kubernetes-bootcamp
 kubectl get services
 ```
+
+## Declarative management of Kubernetes objects
+
+[https://kubernetes.io/docs/tutorials/object-management-kubectl/declarative-object-management-configuration/](https://kubernetes.io/docs/tutorials/object-management-kubectl/declarative-object-management-configuration/)
