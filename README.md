@@ -5,15 +5,12 @@
 
 ## ⚠️ State of this repository ⚠️
 
-I've decided to put learning Kubernetes on hold indefinetely, sticking to *Docker Swarm Mode* and the `docker stack deploy` declarative workflow.
-
-Kubernetes doesn't seem to have adopted the *generic / official images approach* to deploying software yet, but both Swarm and Kubernetes will get there sooner rather than later (I presume).
-
-Neither Swarm Mode not Kubernetes offer a well-designed declarative workflow at the moment, so I will stick with Docker Swarm Mode and try to contribute to <https://github.com/docker/cli/> project as much as I can.
-
 - **Kubernetes News:** Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker. Read: <https://blog.docker.com/2017/10/kubernetes-docker-platform-and-moby-project/>
 
-- Learn **Docker Swarm Mode** resources:
+- Read more about **Kubernetes**:
+(https://kubernetes.io/docs)
+
+- Alternative native deployment solution, **Docker Swarm Mode**:
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/compose/swarm/>
 
