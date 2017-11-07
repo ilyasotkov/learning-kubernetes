@@ -23,6 +23,5 @@ spec: # DeploymentSpec https://kubernetes.io/docs/api-reference/v1.8/#deployment
           image: nginx:1.13.5-alpine
           minReadySeconds: 5
           paused: false
-          progress
           ports:
             - containerPort: 80
