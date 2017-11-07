@@ -1,0 +1,14 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec: # Deployment spec
+  template:
+    labels:
+      app: nginx
+  spec: # DeploymentSpec https://kubernetes.io/docs/api-reference/v1.8/#deploymentspec-v1beta2-apps
+    containers:
+      - name: nginx
+        image: nginx:1.13.5-alpine
+        ports:
+          - containerPort: 80
