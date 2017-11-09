@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-full-deployment
+spec: # DeploymentSpec
+  replicas: 1
+  minReadySeconds: 0
+  paused: false
+  progressDeadlineSeconds: 600
+  revisionHistoryLimit: 10
+  strategy: # DeploymentStrategy
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+  template: # PodTemplateSpec
+    metadata:
+      labels:
+        app: nginx
+    spec: # PodSpec
+      # activeDeadlineSeconds: 0
+      # affinity:
+        # nodeAffinity:
+        # podAffinity:
+        # podAntiAffinity:
+      dnsPolicy: ClusterFirst
+      hostAliases:
+        - ip: 127.0.0.1
+          hostnames:
+            - nginx-pod
+      hostIPC: false
+      hostPID: false
+      hostname: nginx-pod
+      # imagePullSecrets:
+          # - name: ...
+      # initContainers:
+        # - name: ...
+      # nodeName: ...
+      containers:
+        - name: nginx
+          image: nginx:1.13.6-alpine
+          ports:
+            - containerPort: 80
