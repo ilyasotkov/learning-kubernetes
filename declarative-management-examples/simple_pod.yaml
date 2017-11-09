@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Pod
-metadata:
-  name: simple_pod
-spec: # PodSpec https://kubernetes.io/docs/api-reference/v1.8/#podspec-v1-core
-  containers:
-    - image: alpine:3.6
-      command: echo
-      args: ["Hello, world!"]
