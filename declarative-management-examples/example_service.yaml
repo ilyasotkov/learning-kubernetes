@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webserver
+spec:
+  type: ClusterIP
+  ports:
+    - name: HTTPS
+      port: 443
+      targetPort: 4430
