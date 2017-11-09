@@ -26,15 +26,34 @@ minikube start
 kubectl version
 kubectl cluster-info
 kubectl get nodes # get is like "ls"
-kubectl get deployments
-kubectl describe deployment nginx-deployment
+```
+
+# Declarative management commands
+
+```sh
+$ kubectl apply -f ./
+deployment "nginx-deployment" created
+
+$ kubectl delete -f ./
+deployment "nginx-deployment" deleted
 ```
 
 ## Deployments
 
+### Minimal example
+
+This is an example of the smallest possible YAML configuration file for a Deployment.
+
 ```sh
-kubectl apply -f ./deployment.yaml
-kubectl delete -f ./deployment.yaml
+cd minimal-examples/
+kubectl apply -f ./Deployment.yaml
 ```
 
-### Minimal NGINX deployment with helpful comments
+### Full example
+
+This is an example of the biggest possible YAML configuration file for a Deployment.
+
+```sh
+cd full-examples/
+kubectl apply -f ./Deployment.yaml
+```
