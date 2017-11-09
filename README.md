@@ -1,6 +1,4 @@
-![Kubernetes logo.](/diagrams/icon.png)
-
-# 🐳☸️ Learning Kubernetes 🐳☸️
+# 🐳☸️ Learning Kubernetes ☸️🐳
 **Goals:**
 - Estabilish a smooth workflow for deploying containerized services to a Kubernetes cluster.
 - Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
@@ -18,7 +16,7 @@
 
 ## Introduction to Kubernetes
 
-## Commands to get started in the local environment
+## CLI commands to get started in the local environment
 
 ```sh
 minikube version
@@ -31,11 +29,11 @@ kubectl get nodes # get is like "ls"
 # Declarative management commands
 
 ```sh
-$ kubectl apply -f ./
-deployment "nginx-deployment" created
+kubectl apply -f .
+# deployment "nginx-deployment" created
 
-$ kubectl delete -f ./
-deployment "nginx-deployment" deleted
+kubectl delete -f .
+# deployment "nginx-deployment" deleted
 ```
 
 ## Deployments
