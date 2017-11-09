@@ -1,14 +1,9 @@
-apiVersion: apps/v1beta1 # for versions before 1.8.0 use apps/v1beta1
+---
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  # labels:
-    # app: nginx
 spec: # DeploymentSpec
-  # replicas: 1
-  selector:
-    matchLabels:
-      app: nginx
   template: # PodTemplateSpec
     metadata:
       labels:

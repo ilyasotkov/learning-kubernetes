@@ -1,5 +1,7 @@
 # 🐳☸️ Learning Kubernetes ☸️🐳
-**Goals:**
+
+## ✊ Goals:
+
 - Estabilish a smooth workflow for deploying containerized services to a Kubernetes cluster.
 - Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
 
@@ -40,11 +42,13 @@ kubectl delete -f .
 
 ### Minimal example
 
-This is an example of the smallest possible YAML configuration file for a Deployment.
+This is a very minimal example of an NGINX Deployment.
 
 ```sh
-cd minimal-examples/
-kubectl apply -f ./Deployment.yaml
+cd minimal-examples
+kubectl apply -f .
+minikube service nginx-service
+kubectl delete -f .
 ```
 
 ### Full example
@@ -52,6 +56,8 @@ kubectl apply -f ./Deployment.yaml
 This is an example of the biggest possible YAML configuration file for a Deployment.
 
 ```sh
-cd full-examples/
-kubectl apply -f ./Deployment.yaml
+cd full-examples
+kubectl apply -f .
+minikube service nginx-service
+kubectl delete -f .
 ```

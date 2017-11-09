@@ -158,3 +158,9 @@ cd 1-nginx
 eval $(minikube docker-env) && docker build -t my-kube-nginx:latest .
 kubectl apply -f kube-files/
 ```
+
+## Kubernetes secrets
+
+```sh
+echo -n "admin" | base64
+```
