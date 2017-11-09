@@ -9,8 +9,7 @@
 
 - 🎉 **Kubernetes News:** Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker. Read: <https://blog.docker.com/2017/10/kubernetes-docker-platform-and-moby-project/>
 
-- 📖 Read more about **Kubernetes**:
-(https://kubernetes.io/docs)
+- 📖 Read more about **Kubernetes**: <https://kubernetes.io/docs>
 
 - 🐳 Alternative native deployment solution, **Docker Swarm Mode**:
   * <https://docs.docker.com/compose/compose-file/>
@@ -25,10 +24,10 @@ minikube version
 minikube start
 kubectl version
 kubectl cluster-info
-kubectl get nodes # get is like "ls"
+kubectl get nodes
 ```
 
-# Declarative management commands
+## Declarative management commands
 
 ```sh
 kubectl apply -f .
