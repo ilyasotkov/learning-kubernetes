@@ -5,7 +5,7 @@
 - Estabilish a smooth workflow for deploying containerized services to a Kubernetes cluster.
 - Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
 
-## Quick Links
+## 🔗 Quick Links
 
 | Description | Link |
 | --- | --- |
