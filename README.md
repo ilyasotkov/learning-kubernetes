@@ -9,8 +9,10 @@
 
 | Description | Address |
 | --- | --- |
-| Kubernetes Documentation  | https://kubernetes.io/docs  |
-| Kuernetes API Reference   | https://kubernetes.io/docs/api-reference/v1.8/ |
+| Kubernetes Documentation | https://kubernetes.io/docs  |
+| Kubernetes API Reference | https://kubernetes.io/docs/api-reference/v1.8/ |
+| Helm Documentation | https://docs.helm.sh/ |
+
 
 ## ✅ Updates and news
 
@@ -52,24 +54,6 @@ kubectl delete -f .
 
 A *Deployment* is a type of Kubernetes *workload*. Workloads are objects you use to manage and run your containers on the cluster.
 
-### Nginx Deployment minimal example
-
-```sh
-kubectl apply -f minimal-examples/ # Apply all configuration in the directory
-minikube service nginx-service # Go to the browser to see the service
-```
-
-This is a minimal example of an nginx Deployment and a Service to expose the Deployment.
-
-### Nginx Deployment full example
-
-```sh
-kubectl apply -f full-examples/
-minikube service nginx-full-service
-```
-
-The goal here is to create a production-grade Nginx Deployment using the best practices and 100% declarative workflow.
-
 ## Pods
 
 We'll usually define a *PodSpec* in the context of a Deployment:
@@ -102,3 +86,7 @@ spec:
 ### Parameterizing via ktmpl tool
 
 <https://github.com/jimmycuadra/ktmpl>
+
+### Parameterizing via Helm package manager
+
+<https://docs.helm.sh/>

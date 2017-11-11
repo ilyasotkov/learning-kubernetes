@@ -10,7 +10,7 @@ spec: # DeploymentSpec
   # DeploymentSpec defaults
   paused: false
   minReadySeconds: 0
-  replicas: 4
+  replicas: 1
   revisionHistoryLimit: 10
   strategy:
     type: RollingUpdate
@@ -32,7 +32,7 @@ spec: # DeploymentSpec
             name: html-configmap
       containers:
         - name: nginx
-          image: nginx:1.11.0-alpine
+          image: nginx:1.13.6-alpine
           ports:
             - containerPort: 80
           volumeMounts:

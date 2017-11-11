@@ -27,19 +27,25 @@ Rollbacks work (for images) but are pretty useless in the declarative workflow b
 👎 Don't do this:
 
 ```sh
-kubectl apply -f . # rollout / create a deployment
+# Initial rollout
+kubectl apply -f .
 # In `nginx-deployment.yaml`, change image nginx:1.11.0-alpine to nginx:1.13.6-alpine
 kubectl apply -f . # apply changes
 # oops, realize a mistake has been made
-kubectl rollout undo -f nginx-3/nginx-deployment.yaml # rollback to previous version
+# rollback to previous version
+kubectl rollout undo -f nginx-deployment.yaml
 ```
 
 👍 Do this:
+
 ```sh
-# commit code changes to git
-kubectl apply -f . # rollout / create a deployment
+# Initial rollout
+kubectl apply -f .
+# In `nginx-deployment.yaml`, change image nginx:1.11.0-alpine to nginx:1.13.6-alpine
+# Make a git commit
+kubectl apply -f .
 # oops, realize a mistake has been made, go to previous commit
 git checkout HEAD~1
-
+# apply rollback
 kubectl apply -f . # apply previous commit = roll back
 ```
