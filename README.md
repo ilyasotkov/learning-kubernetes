@@ -5,17 +5,22 @@
 - Estabilish a smooth workflow for deploying containerized services to a Kubernetes cluster.
 - Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs).
 
+## Quick Links
+
+| Description | Link |
+| --- | --- |
+| Kubernetes Documentation  | https://kubernetes.io/docs/api-reference/v1.8/  |
+| Kuernetes API Reference   | https://kubernetes.io/docs |
+
 ## ✅ Updates and news
 
 - 🎉 **Kubernetes News:** Kubernetes will be integrated into Docker alongside Docker Swarm Mode in the next version of Docker. Read: <https://blog.docker.com/2017/10/kubernetes-docker-platform-and-moby-project/>
 
-- 📖 Read **Kubernetes** documentation: <https://kubernetes.io/docs>
+- 📖 A comprehensive article about approaches and future approaches to managing Kuberntes applications declaratively: <https://docs.google.com/document/d/1cLPGweVEYrVqQvBLJg6sxV-TrE5Rm2MNOBA_cxZP2WU/edit?usp=sharing>
 
 - 🐳 Alternative native deployment solution, **Docker Swarm Mode**:
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/compose/swarm/>
-
-- A comprehensive article about approaches and future approaches to managing Kuberntes applications declaratively: <https://docs.google.com/document/d/1cLPGweVEYrVqQvBLJg6sxV-TrE5Rm2MNOBA_cxZP2WU/edit?usp=sharing>
 
 ## Introduction to Kubernetes
 

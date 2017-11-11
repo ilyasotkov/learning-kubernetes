@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-configmap
+data:
+  index.html: |
+    <h1>Welcome to the City of Gold!</h1>
+    <p>Freedom and justice for all!</p>
+    <address>(c) 2017 Ilya Sotkov</address>
+
+  default.conf: |
+    server {
+        listen       80  default_server;
+        server_name  _;
+        server_tokens off;
+
+        location / {
+          root /etc/nginx/html;
+          index index.html;
+        }
+    }
