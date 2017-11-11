@@ -7,10 +7,10 @@
 
 ## 🔗 Quick Links
 
-| Description | Link |
+| Description | Address |
 | --- | --- |
-| Kubernetes Documentation  | https://kubernetes.io/docs/api-reference/v1.8/  |
-| Kuernetes API Reference   | https://kubernetes.io/docs |
+| Kubernetes Documentation  | https://kubernetes.io/docs  |
+| Kuernetes API Reference   | https://kubernetes.io/docs/api-reference/v1.8/ |
 
 ## ✅ Updates and news
 

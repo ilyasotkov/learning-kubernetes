@@ -15,9 +15,9 @@ data:
         </style>
       </head>
       <body>
-        <h1>Welcome to the City of Gold!</h1>
+        <h1>learning-kubernetes/nginx/nginx-1</h1>
         <p>Freedom and justice for all!</p>
-        <p>I just got updated!</p>
+        <p>Update count: 0</p>
         <address>(c) 2017 Ilya Sotkov</address>
       </body>
     </html>

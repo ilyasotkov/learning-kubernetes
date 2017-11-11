@@ -7,6 +7,18 @@ spec: # DeploymentSpec
   selector:
     matchLabels:
       app: nginx
+
+  # DeploymentSpec defaults
+  paused: false
+  minReadySeconds: 0
+  replicas: 4
+  revisionHistoryLimit: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+
   template: # PodTemplateSpec
     metadata:
       labels:
@@ -21,7 +33,7 @@ spec: # DeploymentSpec
             name: html-configmap
       containers:
         - name: nginx
-          image: nginx:1.13.6-alpine
+          image: nginx:1.11.0-alpine
           ports:
             - containerPort: 80
           volumeMounts:
