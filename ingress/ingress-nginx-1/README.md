@@ -43,8 +43,8 @@ spec: # IngressSpec
 A **default backend** capable of servicing requests that don't match any rule. At least one of 'backend' or 'rules' must be specified. This field is optional to allow the loadbalancer controller or defaulting logic to specify a global default.
 
 ```yaml
-# ... Ingress resource metadata
-spec:
+# ...
+spec: # IngressSpec
   backend:
     serviceName: my-default-service
     servicePort: 8080
@@ -55,8 +55,8 @@ spec:
 Incoming requests are matched against the host before the IngressRuleValue. If the host is unspecified, the Ingress routes all traffic based on the specified IngressRuleValue.
 
 ```yaml
-# ... Ingress resource metadata
-spec:
+# ...
+spec: # IngressSpec
   rules:
     - host: foo.example.com
       http: # HTTPIngressRuleValue
