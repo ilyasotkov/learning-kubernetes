@@ -18,6 +18,8 @@ It wouldn't be wrong to call an ingress a **reverse proxy**. Specifically, it's 
 
 An ingress can be configured to give services externally-reachable URLs, load balance traffic, terminate SSL, offer name based virtual hosting, and more.
 
+> SSL termination refers to the process that occurs at the server end of an SSL connection, where the traffic transitions between encrypted and unencrypted forms.
+
 ## Examples of ingress resources
 
 <https://kubernetes.io/docs/api-reference/v1.8/#ingress-v1beta1-extensions>
