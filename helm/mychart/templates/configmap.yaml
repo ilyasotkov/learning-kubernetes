@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: {{ .Files.Get "config.txt" | trim }}-configmap
-data:
-  myvalue: "Hello, world!"
