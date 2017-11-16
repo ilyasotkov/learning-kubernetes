@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ template "nginx-release.fullname" . }}
+  labels:
+    app: {{ template "nginx-release.name" . }}
+  annotations:
+    {{- range $key, $value := .Values.ingress.annotations }}
+      {{ $key }}: {{ $value | quote }}
+    {{- end }}
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /freedom
+            backend:
+              serviceName: nginx-service
+              servicePort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  labels:
+    app: {{ template "nginx-release.name" . }}
+spec: # ServiceSpec
+  ports:
+    - port: 80
+  selector:
+    app: {{ template "nginx-release.name" . }}

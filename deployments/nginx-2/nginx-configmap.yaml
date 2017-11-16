@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: html-configmap
+  name: nginx-configmap
 data:
   index.html: |
     <html>
@@ -12,15 +12,23 @@ data:
               margin: 0 auto;
               font-family: Tahoma, Verdana, Arial, sans-serif;
           }
-          strong {
-            font-size: 1.5rem;
-          }
         </style>
       </head>
       <body>
-        <h1>learning-kubernetes/nginx/nginx-3</h1>
+        <h1>learning-kubernetes/deployments/nginx-2</h1>
         <p>Freedom and justice for all!</p>
-        <p>Update count: <strong>0</strong></p>
+        <p>Update count: 0</p>
         <address>(c) 2017 Ilya Sotkov</address>
       </body>
     </html>
+  default.conf: |
+    server {
+        listen       80  default_server;
+        server_name  _;
+        server_tokens off;
+
+        location / {
+          root /html;
+          index index.html;
+        }
+    }
