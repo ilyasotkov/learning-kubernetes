@@ -11,8 +11,7 @@ metadata:
 spec:
   rules:
     {{- range $host := .Values.ingress.hosts }}
-    - host: {{ $host }}
-      http:
+    - http:
         paths:
           - path: /
             backend:
