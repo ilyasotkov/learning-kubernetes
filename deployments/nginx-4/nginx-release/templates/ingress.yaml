@@ -10,12 +10,15 @@ metadata:
     {{- end }}
 spec:
   rules:
-    - http:
+    {{- range $host := .Values.ingress.hosts }}
+    - host: {{ $host }}
+      http:
         paths:
-          - path: /freedom
+          - path: /
             backend:
               serviceName: nginx-service
               servicePort: 80
+    {{- end }}
 ---
 apiVersion: v1
 kind: Service
