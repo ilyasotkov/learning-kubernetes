@@ -1,21 +1,23 @@
-# (Worker) Node components
+# Kubernetes Node (ex. minion)
 
-## kubelet
+## Node Components
 
-TODO
-
-## kube-proxy
+### kubelet
 
 TODO
 
-## Container runtime
+### kube-proxy
 
 TODO
 
-## supervisord
+### Container runtime
+
+TODO
+
+### supervisord
 
 Process monitor and control system to keep kubelet and container runtime running.
 
-## fluentd
+### fluentd
 
 Allows cluster-level logging.
