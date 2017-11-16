@@ -1,5 +1,9 @@
 # Kubernetes ingress-nginx: An Ingress Controller
 
+```sh
+helm install stable/nginx-ingress --name ingress-release -f values.yaml
+```
+
 ## Default backend service
 
 The default backend is a service which handles all url paths and hosts the nginx controller doesn't understand (i.e., all the requests that are not mapped with an Ingress). A default backend exposes two URLs:

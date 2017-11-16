@@ -13,7 +13,7 @@ data:
             server_name  _;
             server_tokens off;
 
-            location / {
+            location /freedom {
               root /html;
               index index.html;
             }

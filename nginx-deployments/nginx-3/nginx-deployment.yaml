@@ -39,4 +39,4 @@ spec: # DeploymentSpec
             - name: nginx-configmap
               mountPath: /etc/nginx
             - name: html-configmap
-              mountPath: /html
+              mountPath: /html/freedom
