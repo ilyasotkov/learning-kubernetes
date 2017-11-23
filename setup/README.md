@@ -1,6 +1,7 @@
 # Kubernetes Cluster Setup
 
 <https://kubernetes.io/docs/setup/>
+<https://kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/>
 
 ## ✊ Goals
 
