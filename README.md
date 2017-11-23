@@ -24,8 +24,10 @@
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/engine/swarm/>
 
-## Notes for the repo
+## Notes
 
-- [Background Knowledge](/notes/0-background-knowledge/)
-- [Introduction to Kubernetes](/notes/1-introduction/)
-- [Cluster Administration](/notes/2-cluster-administration/)
+0. [Background Knowledge](/notes/0-background-knowledge/)
+1. [Introduction to Kubernetes](/notes/1-introduction/)
+2. [Cluster Administration](/notes/2-cluster-administration/)
+3. [Cluster Usage](/notes/3-cluster-usage/)
+4. [Kubernetes-based PaaS Solutions](/notes/4-paas-solutions/)
