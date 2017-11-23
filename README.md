@@ -24,7 +24,7 @@
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/engine/swarm/>
 
-## Notes
+## 📕 Notes
 
 0. [Background Knowledge](/notes/0-background-knowledge/)
 1. [Introduction to Kubernetes](/notes/1-introduction/)
