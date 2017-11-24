@@ -1,5 +1,10 @@
 # OpenShift Origin PaaS
 
+## Workflow
+
+1. Create a new or select existing project.
+2. Manage the project in Console (Dashboard).
+
 ## OpenShift Console Structure:
 
 - Overview
@@ -22,4 +27,4 @@
 - Storage
 - Monitoring
 
-The highest OpenShift abstraction is a **project**, which should have a `Name` and optionally `Display name` and `Description`.
+The highest OpenShift abstraction is a **project**, which should have a name and optionally display name and description.
