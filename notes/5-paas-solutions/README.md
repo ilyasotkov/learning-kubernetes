@@ -1,8 +1,8 @@
 # What is PaaS?
 
-A PaaS is simply an IDE for providing a System Administrator IDE for managaing cluster.
+A PaaS is simply an IDE for managing clusters.
 
-All PaaS have workflow similar to this stack:
+All PaaS have workflows similar to this tool stack:
 
 - A text editor
 - Git (Version Control)
