@@ -30,4 +30,6 @@
 1. [Introduction to Kubernetes](/notes/1-introduction/)
 2. [Cluster Administration](/notes/2-cluster-administration/)
 3. [Cluster Usage](/notes/3-cluster-usage/)
-4. [Kubernetes-based PaaS Solutions](/notes/4-paas-solutions/)
+4. [Comparison to Docker Swarm mode](/notes/4-docker-swarm-mode/)
+5. [PaaS Solutions](/notes/5-paas-solutions/)
+6. [Frameworks](/notes/6-frameworks/)
