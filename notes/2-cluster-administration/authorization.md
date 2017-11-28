@@ -1,6 +1,46 @@
 # Authorization in Kubernetes
 
 <https://kubernetes.io/docs/admin/authorization/>
+<https://kubernetes.io/docs/admin/authorization/abac/>
+
+## ABAC vs RBAC
+
+### Attribute-based access control
+
+ABAC = `kind: Policy` object
+
+Attribute-based access control (ABAC) defines an access control paradigm whereby access rights are granted to users through the use of policies which combine attributes together.
+
+### Role-based access control
+
+RBAC = `kind: Role`, `kind: ClusterRole`, `kind: RoleBinding`, `kind: ClusterRoleBinding`
+
+# Role Based Access Control
+
+## Kubernetes objects for RBAC
+
+### Role and ClusterRole
+
+A `kind: Role` is a set of permissions within a namespace. A `kind: ClusterRole` is a set of permissions that is cluster-wide, i.e. within all namespaces.
+
+```yaml
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  namespace: default
+  name: pod-reader
+rules:
+  - apiGroups: [""] # core API group
+    resources:
+      - pods
+    verbs:
+      - get
+      - watch
+      - list
+```
+
+
+## What is authorization in Kubernetes?
 
 Authorization is granting permissions to access a certain Kubernetes resource (object).
 
