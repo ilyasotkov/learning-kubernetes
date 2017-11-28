@@ -10,10 +10,8 @@ resource "google_container_cluster" "hello-cluster" {
   cluster_ipv4_cidr = "10.20.0.0/14"
   node_version = "1.8.3-gke.0"
   min_master_version = "1.8.3-gke.0"
-  enable_legacy_abac = "false"
+  enable_legacy_abac = "true"
   subnetwork = "default"
-  master_authorized_networks_config {
-  }
   node_config {
     machine_type = "g1-small"
   }
