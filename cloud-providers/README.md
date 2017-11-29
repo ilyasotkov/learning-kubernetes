@@ -27,7 +27,7 @@ After a couple of days of fiddling with GKE, AWS, Azure ACS (and getting a glanc
 
 A cloud provider of our choice manages all hardware (data centers). It also monitors compute / memory / storage resource pressure and auto-scales VMs when needed. It's designed for ~100% availability and ~100% durability.
 
-On our part (as a user of a cloud provider), we manage a cluster git repository and handle all required changes to the cluster state by making changes to cluster files in the repository. Changes are then handled via a CI pipeline (git-based workflow, either *git-flow* or *GitHub Flow*:
+On our part (as a user of a cloud provider), we manage a cluster git repository and handle all required changes to the cluster state by making changes to cluster files in the repository. Changes are then handled via a CI pipeline (git-based workflow, either *git-flow* or *GitHub Flow*):
 
 - Commit change
 - Run all tests / checks to make sure everything works and is ready to be deployed
@@ -41,4 +41,4 @@ Every cluster has its codebase. A company should always have a **staging cluster
 
 ### Cluster updates
 
-Updates to VMs should **always** be rolling and the update process should be abstracted from the DevOps engineers. Want a new version of Kubernetes? Just bump the version in cluster configuration repo.
+Updates to VMs should **always** be rolling and the update process should be abstracted from the DevOps engineers. Want a new version of Kubernetes? Just bump the version in cluster configuration repo and commit changes. Let the tooling (CI + cloud provider interface) to handle the rest.
