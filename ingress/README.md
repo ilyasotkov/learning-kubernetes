@@ -66,6 +66,28 @@ spec: # IngressSpec
 
 ```
 
+### Istio
+
+Istio is a cutting-edge Kubernetes-native Ingress controller (plus a bunch of other things).
+
+1. Install `istioctl`
+```sh
+curl -L https://git.io/getIstio | sh -
+```
+2. Install istio Helm chart
+
+```sh
+# in /ingress
+helm init --upgrade
+helm install --name istio ./istio-chart/ --namespace istio-system
+helm upgrade istio ./istio-chart/ --reuse-values --set istio.install=true
+```
+3. Install Bookinfo sample app
+```sh
+cd istio-0.2.12/
+kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/kube/bookinfo.yaml)
+```
+
 ### TLS
 
 TODO
