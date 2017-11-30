@@ -1,7 +1,7 @@
 # Kubernetes Cluster Setup
 
-<https://kubernetes.io/docs/setup/>
-<https://kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/>
+- <https://kubernetes.io/docs/setup/>
+- <https://kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/>
 
 ## ✊ Goals
 
@@ -17,7 +17,7 @@ After a couple of days of fiddling with GKE, AWS, Azure ACS (and getting a glanc
 
 ## The plan
 
-1. Declaratively (via 1 command) create a cluster and deploy all supporting tools (Ingress + Docker image registry + Jenkins / Drone).
+1. Declaratively (via 1 command) create a cluster and deploy all supporting tools (Ingress Controller + Lego + Docker image registry + Jenkins / Drone).
 2. Deploy a hello-world app.
 
 
@@ -29,16 +29,23 @@ A cloud provider of our choice manages all hardware (data centers). It also moni
 
 On our part (as a user of a cloud provider), we manage a cluster git repository and handle all required changes to the cluster state by making changes to cluster files in the repository. Changes are then handled via a CI pipeline (git-based workflow, either *git-flow* or *GitHub Flow*):
 
-- Commit change
+1. Commit changes manually via `git commit` or a GUI.
+
+The CI pipeline will:
+
 - Run all tests / checks to make sure everything works and is ready to be deployed
 - Deploy into production if checks are successful
 
 ### Goals
 
-A cluster should define a **logical boundary** and not constrained by any technical requirement. It's fine for clusters to be large (e.g. a company cluster).
+A cluster should define a **logical boundary** and not be constrained by any technical requirement. It's fine for clusters to be large (e.g. a company cluster).
 
 Every cluster has its codebase. A company should always have a **staging cluster** to allow DevOps engineers to test cluster configuration.
 
 ### Cluster updates
 
 Updates to VMs should **always** be rolling and the update process should be abstracted from the DevOps engineers. Want a new version of Kubernetes? Just bump the version in cluster configuration repo and commit changes. Let the tooling (CI + cloud provider interface) to handle the rest.
+
+We've gone a long way from every tech company managing its own data centers. And there's no reason to not go *all the way* with container-based infrastructure.
+
+A streamlined DevOps experience should be the norm, not the exception.
