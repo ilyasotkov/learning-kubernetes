@@ -12,6 +12,10 @@ Now that we've created a Kubernetes cluster in GKE by filling out a form at <htt
 
 We'll use Terraform to create the cluster.
 
+## Store Terraform state in Google Cloud Storage
+
+TODO
+
 ## Creating a Kubernetes cluster in GKE via kops
 
 TODO
