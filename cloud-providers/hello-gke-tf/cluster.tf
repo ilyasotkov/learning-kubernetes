@@ -6,7 +6,7 @@ provider "google" {
 resource "google_container_cluster" "hello-cluster" {
   name               = "hello-cluster"
   zone               = "europe-west1-d"
-  initial_node_count = 2
+  initial_node_count = 4
   cluster_ipv4_cidr  = "10.20.0.0/14"
   node_version       = "1.8.3-gke.0"
   min_master_version = "1.8.3-gke.0"
