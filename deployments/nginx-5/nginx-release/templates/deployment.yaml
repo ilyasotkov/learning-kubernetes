@@ -1,0 +1,36 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: {{ template "nginx-release.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ template "nginx-release.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "nginx-release.name" . }}
+    spec:
+      volumes:
+        - name: nginx-configmap
+          configMap:
+            name: nginx-configmap
+        - name: html-configmap
+          configMap:
+            name: html-configmap
+      containers:
+        - name: nginx
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: nginx-configmap
+              mountPath: /etc/nginx
+            - name: html-configmap
+              mountPath: /html
+          resources:
+{{ toYaml .Values.resources | indent 12 }}
