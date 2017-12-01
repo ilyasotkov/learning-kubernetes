@@ -5,20 +5,17 @@ metadata:
   labels:
     app: {{ template "nginx-release.name" . }}
   annotations:
-    kubernetes.io/ingress.class: "istio"
     {{- range $key, $value := .Values.ingress.annotations }}
       {{ $key }}: {{ $value | quote }}
     {{- end }}
 spec:
   rules:
-    {{- range $host := .Values.ingress.hosts }}
     - http:
         paths:
           - path: /
             backend:
               serviceName: nginx-service
               servicePort: 80
-    {{- end }}
 ---
 apiVersion: v1
 kind: Service
