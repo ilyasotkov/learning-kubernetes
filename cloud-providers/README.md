@@ -10,7 +10,7 @@ In this section we will deploy several Kubernetes clusters. The goal is to creat
 ## Comparing cloud providers
 
 | Cloud Provider | Kubernetes Solution | 🔗 | Available |
-| --- | --- |
+| --- | --- | --- | --- |
 | Amazon Web Services (AWS) | EKS | <https://aws.amazon.com/eks/> | ❌ |
 | Microsoft Azure | ACS (old) / AKS (new) | <https://docs.microsoft.com/en-us/azure/aks/> | ⚠️ |
 | Google Cloud | GKE | <https://cloud.google.com/kubernetes-engine/> | ✅ |
