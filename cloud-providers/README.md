@@ -9,17 +9,25 @@ In this section we will deploy several Kubernetes clusters. The goal is to creat
 
 ## Comparing cloud providers
 
+| Cloud Provider | Kubernetes Solution | 🔗 | Available |
+| --- | --- |
+| Amazon Web Services (AWS) | EKS | <https://aws.amazon.com/eks/> | ❌ |
+| Microsoft Azure | ACS (old) / AKS (new) | <https://docs.microsoft.com/en-us/azure/aks/> | ⚠️ |
+| Google Cloud | GKE | <https://cloud.google.com/kubernetes-engine/> | ✅ |
+
 After a couple of days of fiddling with GKE, AWS, Azure ACS (and getting a glance of AKS), that's the impression:
 
 - Terraform + GKE seems to offer the most configuration simplicity and a clean declarative workflow.
 - Azure's ACS is a direct competitor to GKE, and seems to have great potential as well. AKS (the new ACS) is not yet supported by Terraform.
 - AWS lacks a native Kubernetes solution. `kops` is the "official" way to host a Kubernetes cluster on AWS, and <https://engineering.bitnami.com/articles/how-bitnami-uses-kops-to-manage-kubernetes-clusters-on-aws.html> offers a glance into a smooth workflow for hosting a Kubernetes cluster on AWS.
 
+🎉 Amazon has announced a native Kubernetes solution - **EKS** (Elastic Container Service for Kubernetes): <https://aws.amazon.com/eks/>
+
+
 ## The plan
 
 1. Declaratively (via 1 command) create a cluster and deploy all supporting tools (Ingress Controller + Lego + Docker image registry + Jenkins / Drone).
 2. Deploy a hello-world app.
-
 
 ## Ideal case to strive for
 
