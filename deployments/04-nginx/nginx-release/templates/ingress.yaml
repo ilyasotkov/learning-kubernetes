@@ -11,12 +11,17 @@ metadata:
 spec:
   rules:
     {{- range $host := .Values.ingress.hosts }}
-    - http:
+    - host: true.c6ns.pw
+      http:
         paths:
           - path: /
             backend:
               serviceName: nginx-service
               servicePort: 80
+  tls:
+    - secretName: true-c6ns-tls
+      hosts:
+        - "true.c6ns.pw"
     {{- end }}
 ---
 apiVersion: v1
@@ -28,5 +33,6 @@ metadata:
 spec: # ServiceSpec
   ports:
     - port: 80
+  type: NodePort
   selector:
     app: {{ template "nginx-release.name" . }}
