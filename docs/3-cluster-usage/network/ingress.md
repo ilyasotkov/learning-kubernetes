@@ -90,4 +90,10 @@ kubectl apply -f <(istioctl kube-inject -f samples/bookinfo/kube/bookinfo.yaml)
 
 ### TLS
 
-TODO
+By running `/ingress/kube-lego` Helm Chart, we get to use Let's Encrypt certificates for HTTPS simply by having annotation in `kind: Ingress` resources.
+
+```yaml
+```
+
+```yaml
+```
