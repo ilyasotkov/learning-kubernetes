@@ -33,6 +33,6 @@ metadata:
 spec: # ServiceSpec
   ports:
     - port: 80
-  type: NodePort
+  type: ClusterIP
   selector:
     app: {{ template "nginx-release.name" . }}
