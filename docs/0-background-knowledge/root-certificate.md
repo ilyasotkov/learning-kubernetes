@@ -1,6 +1,6 @@
 # Root certificate
 
-![Chain of trust diagram](/diagrams/chain-of-trust.png)
+![Chain of trust diagram](/docs/illustrations/chain-of-trust.png)
 
 A **root certificate** is a public key certificate that identifies a root certificate authority.
 
