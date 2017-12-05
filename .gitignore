@@ -9,4 +9,4 @@
 *.tfvars
 
 # vendor files
-vendor/**
+.vendor
