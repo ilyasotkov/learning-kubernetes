@@ -27,14 +27,6 @@
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/engine/swarm/>
 
-## 📕 Notes
+## Docs
 
-[Read all notes](/notes)
-
-0. [Background Knowledge](/notes/0-background-knowledge/)
-1. [Introduction to Kubernetes](/notes/1-introduction/)
-2. [Cluster Administration](/notes/2-cluster-administration/)
-3. [Cluster Usage](/notes/3-cluster-usage/)
-4. [Comparison to Docker Swarm Mode](/notes/4-docker-swarm-mode/)
-5. [PaaS Solutions](/notes/5-paas-solutions/)
-6. [Frameworks](/notes/6-frameworks/)
+TODO
