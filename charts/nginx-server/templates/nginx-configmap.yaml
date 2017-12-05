@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: nginx-configmap
 data:
-{{ (.Files.Glob "files/conf/*").AsConfig | indent 2 }}
+{{ (.Files.Glob "configs/conf/*").AsConfig | indent 2 }}

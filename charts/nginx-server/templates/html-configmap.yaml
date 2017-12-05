@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: html-configmap
 data:
-{{ (.Files.Glob "files/html/*").AsConfig | indent 2 }}
+{{ (.Files.Glob "configs/html/*").AsConfig | indent 2 }}
