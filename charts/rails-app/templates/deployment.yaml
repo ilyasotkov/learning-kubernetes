@@ -1,37 +1,50 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: {{ template "..fullname" . }}
+  name: {{ template "rails-app.fullname" . }}
   labels:
-    app: {{ template "..name" . }}
+    app: {{ template "rails-app.fullname" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
   template:
     metadata:
       labels:
-        app: {{ template "..name" . }}
+        app: {{ template "rails-app.fullname" . }}
+        chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
         release: {{ .Release.Name }}
-    spec:
+        heritage: {{ .Release.Service }}
+    spec: # PodSpec
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ template "rails-app.fullname" . }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          imagePullPolicy: {{ default "" .Values.image.pullPolicy }}
+          env:
+            - name: RAILS_ENV
+              value: development
+            - name: POSTGRES_HOST
+              value: {{ template "rails-app.postgresql.fullname" . }}
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "rails-app.fullname" . }}
+                  key: db-user
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "rails-app.fullname" . }}
+                  key: db-password
           ports:
-            - containerPort: {{ .Values.service.internalPort }}
-          livenessProbe:
-            httpGet:
-              path: /
-              port: {{ .Values.service.internalPort }}
-          readinessProbe:
-            httpGet:
-              path: /
-              port: {{ .Values.service.internalPort }}
+            - containerPort: {{ .Values.servicePort | int }}
+          workingDir: /app
+          command: ["bash", "-c"]
+          args: ["rails db:setup db:migrate && bundle exec puma -C config/puma.rb"]
           resources:
 {{ toYaml .Values.resources | indent 12 }}
-    {{- if .Values.nodeSelector }}
-      nodeSelector:
-{{ toYaml .Values.nodeSelector | indent 8 }}
-    {{- end }}
