@@ -5,7 +5,7 @@ replicaCount: 1
 # nameOverride: rails
 image:
   repository: ilyasotkov/hello-react-rails
-  tag: develop
+  tag: latest
   pullPolicy: IfNotPresent
 
 serviceType: ClusterIP

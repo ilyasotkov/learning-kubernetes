@@ -28,7 +28,16 @@ spec:
           imagePullPolicy: {{ default "" .Values.image.pullPolicy }}
           env:
             - name: RAILS_ENV
-              value: development
+              value: production
+            - name: RAILS_SERVE_STATIC_FILES
+              value: "yes"
+            - name: RAILS_LOG_TO_STDOUT
+              value: "yes"
+            - name: SECRET_KEY_BASE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ template "rails-app.fullname" . }}
+                  key: secret-key-base
             - name: POSTGRES_HOST
               value: {{ template "rails-app.postgresql.fullname" . }}
             - name: POSTGRES_USER
