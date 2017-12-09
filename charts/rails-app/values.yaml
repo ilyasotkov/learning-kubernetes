@@ -18,11 +18,11 @@ ingress:
     kubernetes.io/ingress.class: "nginx"
     kubernetes.io/tls-acme: "true"
   hosts:
-    - rails.c6ns.pw
+    - react.c6ns.pw
   tls:
-    - secretName: rails-c6ns-pw-tls
+    - secretName: react-c6ns-pw-tls
       hosts:
-        - rails.c6ns.pw
+        - react.c6ns.pw
 
 resources:
   limits:
