@@ -30,6 +30,7 @@ We'll use Terraform to create the cluster *declaratively* in `cluster.tf`.
 - Updating a node pool destroys the existing node pool first and then creates a new one, causing downtime. Resources are saved though, and will go back up by themselves.
 - No way to update node sizes (CPU / memory) without tearing everything down? `DaemonSet`s require more CPU to enable Prometheus.
 - Autoscaling doesn't scale back if resources are abundant?
+- After destroying a cluster, a LoadBalancer might fail to create (`nginx-ingress` chart), you'll need to go the console, then click `VPC network -> External IP addresses`.
 
 ## Store Terraform state in Google Cloud Storage
 
