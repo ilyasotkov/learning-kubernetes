@@ -23,16 +23,3 @@ spec:
       hosts:
         - "true.c6ns.pw"
     {{- end }}
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: nginx-service
-  labels:
-    app: {{ template "nginx-release.name" . }}
-spec: # ServiceSpec
-  ports:
-    - port: 80
-  type: ClusterIP
-  selector:
-    app: {{ template "nginx-release.name" . }}
