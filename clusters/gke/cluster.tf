@@ -10,8 +10,12 @@ resource "google_container_node_pool" "np" {
   node_count = 1
 
   autoscaling {
-    min_node_count = 1
+    min_node_count = 0
     max_node_count = 5
+  }
+
+  node_config {
+    machine_type = "n1-highcpu-4"
   }
 }
 
@@ -27,6 +31,6 @@ resource "google_container_cluster" "my-cluster" {
   subnetwork         = "default"
 
   node_config {
-    machine_type = "g1-small"
+    machine_type = "n1-highcpu-4"
   }
 }
