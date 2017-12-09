@@ -24,6 +24,12 @@ Now that we've created a Kubernetes cluster in GKE by filling out a form at <htt
 
 We'll use Terraform to create the cluster *declaratively* in `cluster.tf`.
 
+## Issues
+
+- Terraform unnecessarily recreates resources.
+- Updating a node pool destroys the existing node pool first and then creates a new one, causing downtime. Resources are saved though, and will go back up by themselves.
+- No way to update node sizes (CPU / memory) without tearing everything down? `DaemonSet`s require more CPU to enable Prometheus.
+- Autoscaling doesn't scale back if resources are abundant?
 
 ## Store Terraform state in Google Cloud Storage
 
