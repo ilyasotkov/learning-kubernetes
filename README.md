@@ -1,6 +1,6 @@
 # Learning Kubernetes
 
-⚠️ Work in progress. Tread carefully. 
+![Work in progress](https://img.shields.io/badge/work-in%20progress-yellow.svg)
 
 ## ✊ Goals
 
