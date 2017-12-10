@@ -19,10 +19,11 @@ After a couple of days of fiddling with GKE, AWS, Azure ACS (and getting a glanc
 
 - Terraform + GKE seems to offer the most configuration simplicity and a clean declarative workflow.
 - Azure's ACS is a direct competitor to GKE, and seems to have great potential as well. AKS (the new ACS) is not yet supported by Terraform.
-- AWS lacks a native Kubernetes solution. `kops` is the "official" way to host a Kubernetes cluster on AWS, and <https://engineering.bitnami.com/articles/how-bitnami-uses-kops-to-manage-kubernetes-clusters-on-aws.html> offers a glance into a smooth workflow for hosting a Kubernetes cluster on AWS.
+- AWS still lacks a turn-key solution.
 
-🎉 Amazon has announced a native Kubernetes solution - **EKS** (Elastic Container Service for Kubernetes): <https://aws.amazon.com/eks/>
+**NEW!** AMAZON has recently has announced a native Kubernetes solution - **EKS** (Elastic Container Service for Kubernetes): <https://aws.amazon.com/eks/>
 
+`kops` has been the "official" way to host a Kubernetes cluster on AWS, and <https://engineering.bitnami.com/articles/how-bitnami-uses-kops-to-manage-kubernetes-clusters-on-aws.html> offers a glance into a smooth workflow for hosting a Kubernetes cluster on AWS.
 
 ## The plan
 
