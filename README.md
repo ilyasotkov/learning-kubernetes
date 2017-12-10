@@ -8,7 +8,7 @@
 
 ## 📘 Docs / Guidebook
 
-![Complete](https://img.shields.io/badge/complete-0%25-red.svg)
+![Complete](https://img.shields.io/badge/complete-10%25-red.svg)
 
 1. [Introduction and Overview](/docs/01-intro/)
 2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
