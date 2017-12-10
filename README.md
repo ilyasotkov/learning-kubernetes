@@ -27,7 +27,7 @@
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/engine/swarm/>
 
-## Docs
+## 🤓 Docs
 
 1. [Introduction and Overview](/docs/01-intro/)
 2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
