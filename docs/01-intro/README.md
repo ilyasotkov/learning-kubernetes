@@ -19,9 +19,9 @@ You negotiate with a cloud provider like Amazon Web Services (AWS), Microsoft Az
 | Hardware | Virtual Hardware | Kubernetes Cluster | Kubernetes API YAML |
 | --- | --- | --- | --- |
 | On-premises Hardware | VMWare Instances | Kubernetes installation (Ansible) | Helm Charts and Releases |
-... | ... | EKS (Amazon), GKE (Google), AKS (Azure) | Kubernetes API YAML |
-... | Google Computer Engine Instance | Kubernetes Installation | Kubernetes API YAML |
-... | Scaleway VMs | Kubernetes Installation | Kubernetes API YAML |
+... | ... | EKS (Amazon), GKE (Google), AKS (Azure) | Helm Charts and Releases |
+... | Google Computer Engine Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
+... | Scaleway VMs | Kubernetes Installation (Ansible) | Helm Charts and Releases |
 
 ### Kubernetes vs Docker Swarm
 
