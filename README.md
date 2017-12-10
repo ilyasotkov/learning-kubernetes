@@ -1,5 +1,7 @@
 # Learning Kubernetes
 
+❗️ Work in progress!
+
 ## ✊ Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
