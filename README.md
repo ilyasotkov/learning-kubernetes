@@ -1,6 +1,9 @@
 # Learning Kubernetes
 
 ![Work in progress](https://img.shields.io/badge/work-in%20progress-yellow.svg)
+![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
+![Uses Terraform](https://img.shields.io/badge/uses-terraform-5956e3.svg)
+
 
 ## ✊ Goals
 
