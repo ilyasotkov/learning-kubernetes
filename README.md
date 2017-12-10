@@ -1,6 +1,6 @@
 # Learning Kubernetes
 
-❗️ Work in progress!
+⚠️ Work in progress. Tread carefully. 
 
 ## ✊ Goals
 
