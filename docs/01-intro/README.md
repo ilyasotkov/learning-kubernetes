@@ -16,15 +16,12 @@ as inputs and creates an orchestrated system of containerized workload, storage,
 
 You negotiate with a cloud provider like Amazon Web Services (AWS), Microsoft Azure, or Google Cloud. They can give you a turn-key Kubernetes cluster -- AKS, EKS, GKE, or a raw VM images for you to install Kubernetes onto. You can also build a private cloud in case on-premises servers are required.
 
-Bare metal > VM instances > Kubernetes cluster > Kubernetes API YAML
-
-On-premises Hardware > VMWare Cloud > Kubernetes installation > Kubernetes API YAML
-
-... > ... > EKS (Amazon), GKE (Google), AKS (Azure) > Kubernetes API YAML
-
-... > Google Computer Engine Instance > Kubernetes Installation > Kubernetes API YAML
-
-... > Scaleway VMs > Kubernetes Installation > Kubernetes API YAML
+| Hardware | Virtual Hardware | Kubernetes Cluster | Kubernetes API YAML |
+| --- | --- | --- | --- |
+| On-premises Hardware | VMWare Instances | Kubernetes installation (Ansible) | Helm Charts and Releases |
+... | ... | EKS (Amazon), GKE (Google), AKS (Azure) | Kubernetes API YAML |
+... | Google Computer Engine Instance | Kubernetes Installation | Kubernetes API YAML |
+... | Scaleway VMs | Kubernetes Installation | Kubernetes API YAML |
 
 ### Kubernetes vs Docker Swarm
 
