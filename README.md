@@ -6,6 +6,16 @@
 ![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
 ![Uses Terraform](https://img.shields.io/badge/uses-terraform-5956e3.svg)
 
+## 📘 Docs / Guidebook
+
+⚠️ Guidebook is in pre-alpha development
+
+1. [Introduction and Overview](/docs/01-intro/)
+2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
+3. [Configuring and Administering Kubernetes Clusters](/docs/03-administration)
+4. [Using Kubernetes with the Helm Package Manager](/docs/04-usage)
+5. [Automating Helm: Declarative Chart & Release Management](/docs/05-charts-and-releases)
+
 
 ## ✊ Goals
 
@@ -33,11 +43,3 @@
 - 🐳 Alternative native deployment solution, **Docker Swarm mode**:
   * <https://docs.docker.com/compose/compose-file/>
   * <https://docs.docker.com/engine/swarm/>
-
-## 📘 Docs
-
-1. [Introduction and Overview](/docs/01-intro/)
-2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
-3. [Configuring and Administering Kubernetes Clusters](/docs/03-administration)
-4. [Using Kubernetes with the Helm Package Manager](/docs/04-usage)
-5. [Automating Helm: Declarative Chart & Release Management](/docs/05-charts-and-releases)
