@@ -22,7 +22,7 @@ A very stardard solution for our templating needs is Helm, which also deals with
 | --- | --- | --- |
 | `cluster.tf` | Kubernetes Cluster | Create a Kubernetes cluster |
 | `Dockerfile` | Docker image | Create a generic container image |
-| Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Release a configured Helm Chart |
+| Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Install a Helm Release |
 
 ## Kubernetes Environments
 
