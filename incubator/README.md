@@ -13,7 +13,11 @@ As of December 2017, Helm is a stable tool ready to be used in production. Helm 
 
 The problem with Helm CLI is that it's imperative. It contains many commands that you need to type on the command line or bury inside of ugly shell scripts (and who doesn't hate shell scripts?)
 
-Some declarative tools to manage Helm releases (and charts) need to be developed and standardize ASAP to support the "everything as code" philosophy.
+Some declarative tools to manage Helm charts and releases need to be developed and standardized as soon as possible. There are already candidates (but none are stable or production-ready):
+
+- [Terraform Helm Provider](https://github.com/mcuadros/terraform-provider-helm)
+- [helm-crd](https://github.com/bitnami/helm-crd)
+- [Helmfile](https://github.com/roboll/helmfile)
 
 ### Helm CLI Example
 
