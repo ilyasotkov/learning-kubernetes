@@ -9,11 +9,10 @@
 ## 📘 Docs / Guidebook
 
 1. [Introduction and Overview](/docs/01-intro/)
-2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
+2. [Managing Cloud Providers](/docs/02-clouds/)
 3. [Configuring and Administering Kubernetes Clusters](/docs/03-administration)
-4. [Using Kubernetes with the Helm Package Manager](/docs/04-usage)
-5. [Automating Helm: Declarative Chart & Release Management](/docs/05-charts-and-releases)
-
+4. [Using Kubernetes Clusters](/docs/04-usage)
+5. [Managing Helm Charts and Releases](/docs/05-charts-and-releases)
 
 ## ✊ Goals
 
