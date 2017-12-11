@@ -19,7 +19,7 @@ Some declarative tools to manage Helm charts and releases need to be developed a
 - [helm-crd](https://github.com/bitnami/helm-crd)
 - [Helmfile](https://github.com/roboll/helmfile)
 
-### Helm CLI Example
+### Helm CLI: Imperative Helm Chart and Release Management
 
 1. Set up a GKE cluster and connect to it.
 
@@ -50,13 +50,13 @@ helm init \
 helm install charts/nginx-webpage
 ```
 
-### Terraform Declarative Helm Provider (HCL)
+### Terraform Helm Provider (Declarative HCL)
 
 ⚠️ Not production-ready
 
 TODO
 
-### Helm CRD Controller (CustomResourceDefinition for Helm) (YAML)
+### helm-crd: CustomResourceDefinition for Helm (YAML)
 
 ⚠️ Not production-ready
 
@@ -71,3 +71,5 @@ TODO
 TODO
 
 ## Istio
+
+TODO
