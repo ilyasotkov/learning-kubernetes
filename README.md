@@ -1,6 +1,6 @@
 # Learning Kubernetes
 
-![Work in progress](https://img.shields.io/badge/work-in%20progress-red.svg)
+![Under Development](https://img.shields.io/badge/under-development-846432.svg)
 ![Uses Docker](https://img.shields.io/badge/uses-docker-50a3cf.svg)
 ![Uses Kubernetes](https://img.shields.io/badge/uses-kubernetes-3176e1.svg)
 ![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
