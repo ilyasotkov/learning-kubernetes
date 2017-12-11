@@ -29,34 +29,3 @@ Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are
 | Deployment | Workload | Compute | Rails App Deployment |
 | PersistentVolumeClaim | Storage | Storage | Rails Backend PostgreSQL DB |
 | ... | ... | ... | ... |
-
-## Setup up your first cluster
-
-1. Set up a GKE cluster and connect to it.
-
-```sh
-# Use Terraform cluster.tf manifest file to create GKE Kubernetes cluster
-cd clusters/gke && terraform apply
-
-# Connect local `kubectl` to the cluster
-gcloud container clusters get-credentials my-cluster --zone europe-west1-d --project ethereal-argon-186217
-```
-
-2. Set up cluster essentials.
-
-```sh
-# Install Ingress Services
-helm init \
-&& helm init --upgrade \
-&& sleep 10 \
-&& helm install charts/nginx-ingress/ \
-&& helm install charts/kube-lego/
-```
-
-3. Go the console, get the IP address of the Ingress Controller LoadBalancer, and point our DNS servers to that address.
-
-4. Add a test static page.
-
-```sh
-helm install charts/nginx-webpage
-```

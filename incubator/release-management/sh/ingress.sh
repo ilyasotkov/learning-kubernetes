@@ -1,4 +1,5 @@
 #! /bin/bash
+
 helm init \
 && helm init --upgrade \
 && sleep 10 \
