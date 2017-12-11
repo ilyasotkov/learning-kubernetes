@@ -12,7 +12,7 @@ Kubernetes is an abstracted platform for consuming cloud compute, storage, and n
 
 ## Kubernetes Environments
 
-Kubernetes is still a beta platform, and mature Kubernetes PaaS are lacking. AWS, for example, as of 2018, has announced EKS (Elastic Container Service) but has not yet released it to the public. Microsoft Azure released AKS (Azure Kubernetes Service) in the end of 2017. Google's GKE (Google Kubernetes Engine) is the most mature PaaS as of 2018.
+Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are lacking. AWS, for example, as of 2018, has announced EKS (Elastic Container Service) but has not yet released it to the public. Microsoft Azure released AKS (Azure Kubernetes Service) in the end of 2017. Google Cloud GKE (Google Kubernetes Engine) is the most mature production-ready Kubernetes solution as of 2018.
 
 | Price | Hardware | Virtual Hardware | Kubernetes Cluster | Kubernetes API Client |
 | --- | --- | --- | --- | --- |
