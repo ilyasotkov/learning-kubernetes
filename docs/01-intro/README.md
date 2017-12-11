@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | `cluster.tf` | Kubernetes Cluster | Create a Kubernetes cluster |
 | `Dockerfile` | Docker image | Create a generic container image |
-| Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Release a workload onto the cluster |
+| Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Release a configured Helm Chart |
 
 ## Kubernetes Environments
 
