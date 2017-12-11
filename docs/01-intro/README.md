@@ -20,4 +20,7 @@
 
 ### Kubernetes API Layers
 
-...
+| Object | Type | Broad type | Example |
+| --- | --- | --- | --- |
+| Deployment | Workload | Compute | Rails App Deployment |
+| PersistentVolumeClaim | Storage | Storage | Rails Backend PostgreSQL DB |
