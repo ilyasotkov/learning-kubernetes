@@ -1,3 +1,3 @@
 #! /bin/bash
 
-helm install -f charts/nginx-webpage
+helm install charts/nginx-webpage
