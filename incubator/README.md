@@ -1,11 +1,11 @@
 # Kubernetes Incubator
 
-This is a section to experiment with cutting-edge Kubernetes technology that is not production-ready.
+In the incubator, we are free to experiment with cutting-edge Kubernetes technology that is not production-ready.
 
 Emerging technologies:
 
-- Helm declarative chart and release managment
-- Istio ingress and networking framework
+- [Helm declarative chart and release managment](#helm-chart-and-release-management)
+- [Istio ingress and networking framework](#istio)
 
 ## Helm Chart and Release Management
 
@@ -69,3 +69,5 @@ TODO
 ⚠️ Not production-ready
 
 TODO
+
+## Istio
