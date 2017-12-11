@@ -1,14 +1,12 @@
 # Learning Kubernetes
 
-![Work in progress](https://img.shields.io/badge/work-in%20progress-yellow.svg)
+![Work in progress](https://img.shields.io/badge/work-in%20progress-red.svg)
 ![Uses Docker](https://img.shields.io/badge/uses-docker-50a3cf.svg)
 ![Uses Kubernetes](https://img.shields.io/badge/uses-kubernetes-3176e1.svg)
 ![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
 ![Uses Terraform](https://img.shields.io/badge/uses-terraform-5956e3.svg)
 
 ## 📘 Docs / Guidebook
-
-![Complete](https://img.shields.io/badge/complete-10%25-red.svg)
 
 1. [Introduction and Overview](/docs/01-intro/)
 2. [Managing Clouds / Kubernetes Hosting Environments](/docs/02-clouds/)
