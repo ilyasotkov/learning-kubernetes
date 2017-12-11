@@ -4,8 +4,8 @@
 
 | Input | Output | Task |
 | --- | --- | --- |
-| cluster.tf | Kubernetes Cluster | Create a Kubernetes cluster |
-| Dockerfile | Docker image | Create a generic container image |
+| `cluster.tf` | Kubernetes Cluster | Create a Kubernetes cluster |
+| `Dockerfile` | Docker image | Create a generic container image |
 | Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Release a workload onto the cluster |
 
 ## Kubernetes Environments
