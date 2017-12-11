@@ -14,7 +14,7 @@
 4. [Using Kubernetes Clusters](/docs/04-usage)
 5. [Managing Helm Charts and Releases](/docs/05-charts-and-releases)
 
-## ✊ Goals
+## ☸️ Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
 - Estabilish a smooth *declarative* workflow for deploying containerized services to Kubernetes clusters
