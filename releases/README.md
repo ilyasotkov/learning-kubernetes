@@ -1,3 +1,0 @@
-# Managing Helm Releases using Helmfile
-
-...

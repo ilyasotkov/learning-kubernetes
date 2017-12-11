@@ -1,0 +1,13 @@
+apiVersion: helm.bitnami.com/v1
+kind: HelmRelease
+metadata:
+  name: my-mariadb
+spec:
+  repoUrl: https://kubernetes-charts.storage.googleapis.com
+  chartName: mariadb
+  version: 2.0.1
+  values: |
+    mariadbDatabase: mydb
+    mariadbPassword: sekret
+    mariadbRootPassword: supersekret
+    mariadbUser: myuser
