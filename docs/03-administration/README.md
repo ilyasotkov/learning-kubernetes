@@ -1,31 +1,19 @@
 # Administering and Managing Kubernetes Environements
 
-## Creating a new isolated cluster
+This chapter deals with Kubernetes-level communication at the administrator level.
 
-### Imperatively
-
-...
-
-### Declaratively
+## Configure cluster networking
 
 ...
 
-## Adding nodes to the pool
+## Configure cluster storage
 
 ...
 
-## Keep cluster high-availability and do components upgrades
+## Set up human user access
 
 ...
 
-## User, Identity Management and Security
-
-...
-
-## Human users (your teammates)
-
-...
-
-## Non-human users (service accounts)
+## Set up monitoring and alerting
 
 ...
