@@ -36,6 +36,7 @@ There is a number of Kubernetes objects that are always contained within another
 | Object | Type | Broad type | Example | Context |
 | --- | --- | --- | --- | --- |
 | PersistentVolumeClaim | Storage | Storage | ? | ? |
+| StorageClass | Storage | Storage | ? | ? |
 
 ### Cluster networking: service discovery, DNS, IP addresses
 
@@ -43,6 +44,7 @@ There is a number of Kubernetes objects that are always contained within another
 | --- | --- | --- | --- | --- |
 | Service | Discovery & Load Balancing | Network | ? | ? |
 | Ingress | Discovery & Load Balancing | Network | ? | ? |
+| NetworkPolicy | Security | Network | ? | ? |
 
 ### Cluster
 
