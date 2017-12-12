@@ -26,7 +26,7 @@ A very stardard solution for our templating needs is Helm, which also deals with
 
 | Cloud Control Interface | Local (development) Interface | Deployment Interface |
 | --- | --- | --- |
-| gcloud, Terraform, cloud.google.com GUI ("console") | docker-compose, docker-stack (local production) | Helm Charts and Release specs | 
+| gcloud, Terraform, cloud.google.com GUI ("console") | docker-compose, docker-stack (local production) | Helm Charts and Release specs |
 | Ansible | docker-compose, docker-stack (local production) | docker-stack.yaml + jinja2 templates |
 
 ## Kubernetes Environments
@@ -40,17 +40,3 @@ Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are
 | 💵💵 | ... | AWS EC2 Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
 | 💵 | ... | Scaleway VMs | Kubernetes Installation (Ansible) | Helm Charts and Releases |
 | 💵💵💵 | ... | ... | EKS (Amazon), GKE (Google), AKS (Azure) | Helm Charts and Releases |
-
-### Kubernetes API Layers
-
-Think of these objects as something you're going to put into `templates` directory in a Helm Chart. Every file in `templates` is usually a separate Kubernetes API Object.
-
-TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/charts repo
-
-| Object | Type | Broad type | Example |
-| --- | --- | --- | --- |
-| Deployment | Workload | Compute | Rails App Deployment |
-| Job | Workload | Compute | ? |
-| DaemonSet | Workload | Compute | ? |
-| StatefulSet | Workload | Compute | ? |
-| CronJob | Workload | Compute | ? |
