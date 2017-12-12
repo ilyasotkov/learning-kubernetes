@@ -38,6 +38,8 @@ Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are
 
 ### Kubernetes API Layers
 
+Think of these objects as something you're going to put into `templates` directory in a Helm Chart. Every file in `templates` is usually a separate Kubernetes API Object.
+
 TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/charts repo
 
 | Object | Type | Broad type | Example |
