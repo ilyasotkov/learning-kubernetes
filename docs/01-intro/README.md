@@ -24,6 +24,11 @@ A very stardard solution for our templating needs is Helm, which also deals with
 | `Dockerfile` | Docker image | Create a generic container image |
 | Docker images + Helm Charts + `values.yaml`| Kubernetes API Objects | Install a Helm Release |
 
+| Cloud Control Interface | Local (development) Interface | Deployment Interface |
+| --- | --- | --- |
+| gcloud, Terraform, cloud.google.com GUI ("console") | docker-compose, docker-stack (local production) | Helm Charts and Release specs | 
+| Ansible | docker-compose, docker-stack (local production) | docker-stack.yaml + jinja2 templates |
+
 ## Kubernetes Environments
 
 Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are lacking. AWS, for example, as of 2018, has announced EKS (Elastic Container Service) but has not yet released it to the public. Microsoft Azure released AKS (Azure Kubernetes Service) in the end of 2017. Google Cloud GKE (Google Kubernetes Engine) is the most mature production-ready Kubernetes solution as of 2018.
