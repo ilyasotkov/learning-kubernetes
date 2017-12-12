@@ -38,8 +38,12 @@ Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are
 
 ### Kubernetes API Layers
 
+TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/charts repo
+
 | Object | Type | Broad type | Example |
 | --- | --- | --- | --- |
 | Deployment | Workload | Compute | Rails App Deployment |
-| PersistentVolumeClaim | Storage | Storage | Rails Backend PostgreSQL DB |
-| ... | ... | ... | ... |
+| Job | Workload | Compute | ? |
+| DaemonSet | Workload | Compute | ? |
+| StatefulSet | Workload | Compute | ? |
+| CronJob | Workload | Compute | ? |
