@@ -11,7 +11,7 @@ metadata:
 spec:
   rules:
     {{- range $host := .Values.ingress.hosts }}
-    - host: true.c6ns.pw
+    - host: false.c6ns.pw
       http:
         paths:
           - path: /
@@ -19,7 +19,7 @@ spec:
               serviceName: nginx-service
               servicePort: 80
   tls:
-    - secretName: true-c6ns-tls
+    - secretName: false-c6ns-tls
       hosts:
-        - "true.c6ns.pw"
+        - "false.c6ns.pw"
     {{- end }}
