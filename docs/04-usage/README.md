@@ -39,4 +39,7 @@ TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/
 
 ## Talking to the API server in packages / Helm releases
 
-...
+| Object | Description |
+| --- | --- |
+| Chart | A generic Helm chart is a template for a Helm Release. One app chart will usually have several releases (staging, prod, qa) |
+| Release | A specific release of a chart. Every release has its unique `values` that override default chart `values`.
