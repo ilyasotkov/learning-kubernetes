@@ -2,7 +2,11 @@
 
 Goal: design a Kubernetes-based framework 🤠
 
-Features:
+- Opinionated
+- Web-frameworky experience / workflow
+- "Feels familiar"
+- Scalable
+- **Highest**-level abstration
 
 | Feature | Tool |
 | --- | --- |
@@ -12,4 +16,4 @@ Features:
 | Automated tests | ? |
 | Ingress Controller | nginx-ingress, istio (envoy) |
 | Monitoring | Prometheus, Grafana, Zipkin |
-| Secret storage | In-repo encrypted, Vault |
+| Secret storage and Distribution | In-repo encrypted, Vault |
