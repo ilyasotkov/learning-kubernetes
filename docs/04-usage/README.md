@@ -6,7 +6,7 @@ Think of these objects as something you're going to put into `templates` directo
 
 TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/charts repo
 
-##  Workloads
+##  Workload objects
 
 | Object | Type | Broad type | Context | Example |
 | --- | --- | --- | --- | --- |
@@ -16,19 +16,26 @@ TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/
 | StatefulSet | Workload | Compute | ? | ? |
 | CronJob | Workload | Compute | ? | ? |
 
+## Workload configuration objects
+
+| Object | Type | Broad type | Context | Example |
+| --- | --- | --- | --- | --- |
+| ConfigMap | Config | Storage | ? | ? |
+| Secret | Secret | Storage | ? | ? |
+
 ## Persistent storage
 
 | Object | Type | Broad type | Example | Context |
 | --- | --- | --- | --- | --- |
-| Deployment | Workload | Compute | Rails App Deployment | ? |
-| Job | Workload | Compute | ? | ? |
-| DaemonSet | Workload | Compute | ? | ? |
-| StatefulSet | Workload | Compute | ? | ? |
-| CronJob | Workload | Compute | ? | ? |
+| PersistentVolumeClaim | Storage | Storage | ? | ? |
+| Volume | Storage | Storage | ? | ? |
 
 ## Cluster networking: service discovery, DNS, IP addresses
 
-...
+| Object | Type | Broad type | Example | Context |
+| --- | --- | --- | --- | --- |
+| Service | Discovery & Load Balancing | Network | ? | ? |
+| Ingress | Discovery & Load Balancing | Network | ? | ? |
 
 ## Talking to the API server in packages / Helm releases
 
