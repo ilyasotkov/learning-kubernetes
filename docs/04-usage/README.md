@@ -29,6 +29,7 @@ TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/
 | --- | --- | --- | --- | --- |
 | PersistentVolumeClaim | Storage | Storage | ? | ? |
 | Volume | Storage | Storage | ? | ? |
+| StorageClass | Storage | Storage | ? | ? |
 
 ## Cluster networking: service discovery, DNS, IP addresses
 
@@ -36,6 +37,13 @@ TODO: Sort all Kubernetes API Object by popularity within github.com/kubernetes/
 | --- | --- | --- | --- | --- |
 | Service | Discovery & Load Balancing | Network | ? | ? |
 | Ingress | Discovery & Load Balancing | Network | ? | ? |
+
+## Cluster
+
+| Object | Type | Broad type | Example | Context |
+| --- | --- | --- | --- | --- |
+| Role, ClusterRole | RBAC | Security | ? | ? |
+| RoleBinding, ClusterRoleBinding | RBAC | Security | ? | ? |
 
 ## Talking to the API server in packages / Helm releases
 
