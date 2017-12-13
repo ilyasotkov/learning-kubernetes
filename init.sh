@@ -1,8 +1,8 @@
 #! /bin/bash
-
+gcloud container clusters get-credentials my-cluster --zone europe-west1-d --project ethereal-argon-186217 && \
 helm init
 helm init --upgrade
-sleep 15
+sleep 15 # Let Tiller Pod launch
 helm install charts/nginx-ingress && helm install charts/kube-lego
 
 # Then Point DNS servers to GCE LoadBalancer IP
