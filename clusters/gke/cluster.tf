@@ -31,6 +31,6 @@ resource "google_container_cluster" "my-cluster" {
   subnetwork         = "default"
 
   node_config {
-    machine_type = "n1-highcpu-4"
+    machine_type = "n1-highcpu-2"
   }
 }
