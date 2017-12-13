@@ -1,19 +1,27 @@
-apiVersion: apps/v1beta2
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: {{ template "nginx-webpage.fullname" . }}
   labels:
-    app: {{ template "nginx-release.name" . }}
+    app: {{ template "nginx-webpage.fullname" . }}
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
 spec:
   replicas: {{ .Values.replicaCount }}
-  selector:
-    matchLabels:
-      app: {{ template "nginx-release.name" . }}
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
   template:
     metadata:
       labels:
-        app: {{ template "nginx-release.name" . }}
-    spec:
+        app: {{ template "nginx-webpage.fullname" . }}
+        chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+        release: {{ .Release.Name }}
+        heritage: {{ .Release.Service }}
+    spec: # PodSpec
       volumes:
         - name: nginx-configmap
           configMap:
@@ -26,7 +34,7 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - containerPort: 80
+            - containerPort: {{ .Values.servicePort | int }}
           volumeMounts:
             - name: nginx-configmap
               mountPath: /etc/nginx
