@@ -1,5 +1,9 @@
 # Using Kubernetes Clusters
 
+## Cluster-level Administration
+
+A lot of the Kubernetes implementation are hidden behind the scenes, and all of the complexities automated and abstracted away. So the question becomes: what can a computer **not do** that a human sysadmin can? If there's no hardware to handle and all resources are in the cloud, what do we need sysad
+
 ### Authoring Kubenetes API Objects
 
 Think of these objects as something you're going to put into `templates` directory in a Helm Chart. Every file in `templates` is usually a separate top-level Kubernetes API Object.
@@ -44,14 +48,14 @@ There is a number of Kubernetes objects that are always contained within another
 | --- | --- | --- | --- | --- |
 | Service | Discovery & Load Balancing | Network | ? | ? |
 | Ingress | Discovery & Load Balancing | Network | ? | ? |
-| NetworkPolicy | Security | Network | ? | ? |
+| 🔒 NetworkPolicy | Security | Network | ? | ? |
 
 ### Cluster
 
 | Object | Type | Broad type | Example | Context |
 | --- | --- | --- | --- | --- |
-| Role, ClusterRole | RBAC | Security | ? | ? |
-| RoleBinding, ClusterRoleBinding | RBAC | Security | ? | ? |
+| 🔒 Role, ClusterRole | RBAC | Security | ? | ? |
+| 🔒 RoleBinding, ClusterRoleBinding | RBAC | Security | ? | ? |
 
 ### Talking to the API server in packages / Helm releases
 
