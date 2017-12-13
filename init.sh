@@ -3,6 +3,7 @@
 gcloud container clusters get-credentials my-cluster --zone europe-west1-d --project ethereal-argon-186217 && \
 helm init
 helm init --upgrade
+echo "Waiting 15 seconds for Tiller pod to start up..."
 sleep 15 # Give time for Tiller pod to start
 helm install charts/nginx-ingress && helm install charts/kube-lego
 
@@ -20,3 +21,7 @@ helm install charts/nginx-ingress && helm install charts/kube-lego
 # helm install charts/grafana
 # helm install charts/jenkins
 # helm install charts/drone
+#
+# helm ls
+# helm upgrade <release-name> <chart-directory>
+# helm del --purge <release-name>
