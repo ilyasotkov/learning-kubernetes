@@ -13,10 +13,13 @@ serviceType: ClusterIP
 servicePort: 80
 
 ingress:
-  # If true, an Ingress Resource will be created
-  enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: "nginx"
-    # kubernetes.io/tls-acme: "true"
-  hosts: []
-  tls: []
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    kubernetes.io/tls-acme: "true"
+  hosts:
+    - web.swarm.pw
+  tls:
+    - secretName: web-swarm-pw
+      hosts:
+        - web.swarm.pw

@@ -15,11 +15,11 @@ helm install charts/nginx-ingress && helm install charts/kube-lego
 #
 # Now we can install some packages and expose them with Ingress resources!
 #
-# helm install charts/nginx-webpage
-# helm install charts/rails-app
+# helm install -f releases/nginx-webpage-devel.yaml charts/nginx-webpage
+# helm install -f releases/rails-app-devel.yaml charts/rails-app
+# helm install -f releases/jenkins-devel.yaml charts/jenkins
 # helm install charts/prometheus
 # helm install charts/grafana
-# helm install charts/jenkins
 # helm install charts/drone
 #
 # helm ls
