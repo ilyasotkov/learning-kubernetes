@@ -6,7 +6,7 @@
 ![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
 ![Uses Terraform](https://img.shields.io/badge/uses-terraform-5956e3.svg)
 
-⚠️ Project is in pre-alpha
+⚠️ Project is experimental / in pre-alpha
 
 ## 📘 Docs / Guidebook
 
