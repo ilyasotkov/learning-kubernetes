@@ -1,13 +1,19 @@
 #! /bin/bash
+
 gcloud container clusters get-credentials my-cluster --zone europe-west1-d --project ethereal-argon-186217 && \
 helm init
 helm init --upgrade
-sleep 15 # Let Tiller Pod launch
+sleep 15 # Give time for Tiller pod to start
 helm install charts/nginx-ingress && helm install charts/kube-lego
 
-# Then Point DNS servers to GCE LoadBalancer IP
-# Then release all charts that use Ingress resources
-
+# nginx-ingress will create a LoadBalancer service,
+# which will give us an external IP address
+#
+# we get the IP address in GKE console (Discovery & Load Balancing tab)
+# then point our DNS servers to it
+#
+# Now we can install some packages and expose them with Ingress resources!
+#
 # helm install charts/nginx-webpage
 # helm install charts/rails-app
 # helm install charts/prometheus
