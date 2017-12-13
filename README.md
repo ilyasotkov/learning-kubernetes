@@ -16,6 +16,13 @@
 4. [Using Kubernetes Clusters](/docs/04-usage)
 5. [Managing Helm Charts and Releases](/docs/05-charts-and-releases)
 
+### 📕 Extra reading
+
+6. [Comparing turnkey Kubernetes cluster solutions + Daydreaming](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters)
+7. [Emerging Kubernetes Tools: Declarative Helm, Istio framework](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/incubator)
+8. [Moving to declarative model on Google Kubernetes Engine](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters/gke)
+9. [Creating a generic Rails 5.1 / Puma / PostgreSQL / React  Helm Chart](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/charts/rails-app)
+
 ## ☸️ Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
