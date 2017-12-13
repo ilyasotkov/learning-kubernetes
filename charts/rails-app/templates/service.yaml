@@ -12,5 +12,6 @@ spec:
   selector:
     app: {{ template "rails-app.fullname" . }}
   ports:
-    - name: http
+    - name: http-rails
       port: {{ .Values.servicePort | int }}
+      targetPort: {{ .Values.servicePort | int }}
