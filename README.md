@@ -18,10 +18,10 @@
 
 ### 📕 Extra reading
 
-6. [Comparing turnkey Kubernetes cluster solutions + Daydreaming](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters)
-7. [Emerging Kubernetes Tools: Declarative Helm, Istio framework](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/incubator)
-8. [Moving to declarative model on Google Kubernetes Engine](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters/gke)
-9. [Creating a generic Rails 5.1 / Puma / PostgreSQL / React  Helm Chart](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/charts/rails-app)
+- [Comparing turnkey Kubernetes cluster solutions + Daydreaming](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters)
+- [Emerging Kubernetes Tools: Declarative Helm, Istio framework](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/incubator)
+- [Moving to declarative model on Google Kubernetes Engine](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters/gke)
+- [Creating a generic Rails 5.1 / Puma / PostgreSQL / React  Helm Chart](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/charts/rails-app)
 
 ## ☸️ Goals
 
