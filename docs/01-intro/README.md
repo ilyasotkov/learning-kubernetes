@@ -33,10 +33,10 @@ A very stardard solution for our templating needs is Helm, which also deals with
 
 Kubernetes is still a beta platform, and mature Kubernetes turnkey solutions are lacking. AWS, for example, as of 2018, has announced EKS (Elastic Container Service) but has not yet released it to the public. Microsoft Azure released AKS (Azure Kubernetes Service) in the end of 2017. Google Cloud GKE (Google Kubernetes Engine) is the most mature production-ready Kubernetes solution as of 2018.
 
-| Price | Hardware | Virtual Hardware | Kubernetes Cluster | Kubernetes API Client |
-| --- | --- | --- | --- | --- |
-| 💵💵💵💵💵 | On-premises Hardware | VMWare Instances | Kubernetes installation (Ansible) | Helm Charts and Releases |
-| 💵💵💵 | ... | Google Compute Engine Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
-| 💵💵 | ... | AWS EC2 Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
-| 💵 | ... | Scaleway VMs | Kubernetes Installation (Ansible) | Helm Charts and Releases |
-| 💵💵💵 | ... | ... | EKS (Amazon), GKE (Google), AKS (Azure) | Helm Charts and Releases |
+| Hardware | Virtual Hardware | Kubernetes Cluster | Kubernetes API Client |
+| --- | --- | --- | --- |
+| On-premises Hardware | VMWare Instances | Kubernetes installation (Ansible) | Helm Charts and Releases |
+| ☁️ | Google Compute Engine Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
+| ☁️ | AWS EC2 Instance | Kubernetes Installation (Ansible or kops) | Helm Charts and Releases |
+| ☁️ | Scaleway VMs | Kubernetes Installation (Ansible) | Helm Charts and Releases |
+| ☁️ | ☁️ | EKS (Amazon), GKE (Google), AKS (Azure) | Helm Charts and Releases |
