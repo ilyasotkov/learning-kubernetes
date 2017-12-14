@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_container_node_pool" "np" {
-  name               = "my-node-pool"
+  name               = "node-pool"
   zone               = "europe-west1-d"
   cluster            = "${google_container_cluster.my-cluster.name}"
   node_count = 1
@@ -15,7 +15,7 @@ resource "google_container_node_pool" "np" {
   }
 
   node_config {
-    machine_type = "n1-highcpu-4"
+    machine_type = "n1-standard-2"
   }
 }
 
@@ -25,12 +25,12 @@ resource "google_container_cluster" "my-cluster" {
   initial_node_count = 1
 
   cluster_ipv4_cidr  = "10.20.0.0/14"
-  node_version       = "1.8.3-gke.0"
-  min_master_version = "1.8.3-gke.0"
+  node_version       = "1.8.4-gke.0"
+  min_master_version = "1.8.4-gke.0"
   enable_legacy_abac = "true"
   subnetwork         = "default"
 
   node_config {
-    machine_type = "n1-highcpu-2"
+    machine_type = "n1-highcpu-4"
   }
 }
