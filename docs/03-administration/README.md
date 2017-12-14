@@ -22,6 +22,14 @@ This chapter deals with Kubernetes-level communication at the administrator leve
 
 ## Set up human user access
 
+### Concepts
+
+GCP Project Owner, GCP Project Team Member
+
+Project Owner grants IAM roles to team member so that they can access the project's resources.
+
+### Cloud IAM
+
 We'll create the ability for our new teammate, Alice Doe, to get full access to Google Kubernetes Engine and to Google Kubernetes Engine Clusters.
 
 ```sh
