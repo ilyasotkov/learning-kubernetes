@@ -4,7 +4,7 @@ This chapter deals with Kubernetes-level communication at the administrator leve
 
 ## Step-by-step
 
-1. Create a Kubernetes cluster and an auto-scaling node pool.
+1. Create a Kubernetes cluster and an auto-scaling node pool. You create the cluster as a certain Google Account holder, in a certain project within a certain zone.
 
 2. Initial-connect to the cluster.
 
