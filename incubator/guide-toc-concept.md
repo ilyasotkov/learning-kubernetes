@@ -1,6 +1,8 @@
 # Guide to Kubernetes at any scale
 
-This is an experimental guide structure.
+Learning Kubernetes should be a fluid process that just *makes sense*. Documentation should be concise, well-structured, and practical in nature.
+
+Here's a proposal table of contents that attemps to make *the most sense*:
 
 ### 1. Create a Kubernetes cluster
 
