@@ -18,6 +18,7 @@ This chapter deals with Kubernetes-level communication at the administrator leve
   * HTTP basic auth
   * An authenticating proxy
 
+
 ## Configure cluster networking
 
 ...
@@ -26,7 +27,7 @@ This chapter deals with Kubernetes-level communication at the administrator leve
 
 ...
 
-## Set up human user access
+## Set up human user access on GKE using Google Accounts
 
 ### Concepts
 
@@ -60,6 +61,11 @@ alias a-kubectl='kubectl --token="$(gcloud auth print-access-token --account=$al
 
 a-kubectl get nodes
 ```
+
+## Set up authentication to Kubernetes API using client certificates
+
+We can allow both Bob and Alice to be able to access our cluster's Kubernetes API Server by simply granting them x509 client certificates.
+
 
 ## Set up monitoring and alerting
 
