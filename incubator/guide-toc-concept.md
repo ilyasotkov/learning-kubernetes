@@ -15,8 +15,12 @@ This is an experimental guide structure.
 
 ### 2. Configure and administer a Kubernetes cluster
 
-  * Configure `kubectl` in `~/.kube/config` for human access
+  * Authentication for Kubernetes API access via client tools (`kubectl` and `helm`)
+  * Local `~/.kube/config` for `kubectl`
   * Set up authentication for fellow human users
+    * Default Cloud Authentication
+      * GKE
+      * ...
     * Using tokens
     * Using x509 client certificates
     * Using Keystone for authentication
