@@ -10,20 +10,27 @@
 
 ## ⚗️ Labs
 
-1. [Create and upgrade a Kubernetes cluster](/)
-  * Create a Kubernetes cluster
-  * Upgrade a Kubernetes cluster
-2. [Administer and configure a Kubernetes cluster](/)
-  * Authentication (login)
-  * Authorization (access restriction)
-  * Persistent storage
-  * Networking, load balancing, ingress management
-  * Monitoring and alerting
-  * Continous integration (CI) tools
-3. [Use a Kubernetes cluster](/)
-  * Create a Helm chart
-  * Install a Helm chart
-  * Manage Helm releases
+### 1. Create and upgrade a Kubernetes cluster
+
+- [How are Kubernetes clusters created and managed?](/)
+- [Create a Kubernetes cluster](/)
+- [Upgrade a Kubernetes cluster](/)
+
+### 2. Administer and configure a Kubernetes cluster
+
+- [How do I turn a bare Kubernetes installation into a production cluster?](/)
+- [Authentication (granting access)](/)
+- Authorization (limiting access)
+- Persistent storage
+- Networking, load balancing, ingress management
+- Monitoring and alerting
+- Continous integration (CI) tools
+
+### 3. Use a Kubernetes cluster
+
+- Create a Helm chart
+- Install a Helm chart
+- Manage Helm releases
 
 ## ☸️ Goals
 
