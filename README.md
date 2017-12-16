@@ -10,17 +10,17 @@
 
 ## ⚗️ Labs
 
-- [Create and upgrade a Kubernetes cluster](/)
+1. [Create and upgrade a Kubernetes cluster](/)
   * Create a Kubernetes cluster
   * Upgrade a Kubernetes cluster
-- [Administer and configure a Kubernetes cluster](/)
+2. [Administer and configure a Kubernetes cluster](/)
   * Authentication (login)
   * Authorization (access restriction)
   * Persistent storage
   * Networking, load balancing, ingress management
   * Monitoring and alerting
   * Continous integration (CI) tools
-- [Use a Kubernetes cluster](/)
+3. [Use a Kubernetes cluster](/)
   * Deploy a new Rails app
   * Deploy a static Jekyll / Hugo website
   * Deploy a Wordpress website
