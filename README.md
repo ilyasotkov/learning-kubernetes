@@ -8,20 +8,24 @@
 
 ⚠️ Project is experimental / in pre-alpha
 
-## 📘 Docs / Guidebook
+## ⚗️ Labs
 
-1. [Introduction and Overview](/docs/01-intro/)
-2. [Managing Cloud Providers](/docs/02-clouds/)
-3. [Administering Kubernetes Clusters](/docs/03-administration)
-4. [Using Kubernetes Clusters](/docs/04-usage)
-5. [Managing Helm Charts and Releases](/docs/05-charts-and-releases)
-
-### 📕 Extra reading
-
-- [Comparing turnkey Kubernetes cluster solutions: GKE, AKS, EKS](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters)
-- [Emerging Kubernetes Tools: Declarative Helm, Istio framework](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/incubator)
-- [Moving to declarative model on Google Kubernetes Engine](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters/gke)
-- [Creating a generic Rails 5.1 / Puma / PostgreSQL / React  Helm Chart](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/charts/rails-app)
+- [Create and upgrade a Kubernetes cluster](/)
+  * Create a Kubernetes cluster
+  * Upgrade a Kubernetes cluster
+- [Administer and configure a Kubernetes cluster](/)
+  * Authentication (login)
+  * Authorization (access restriction)
+  * Persistent storage
+  * Networking, load balancing, ingress management
+  * Monitoring and alerting
+  * Continous integration (CI) tools
+- [Use a Kubernetes cluster](/)
+  * Deploy a new Rails app
+  * Deploy a static Jekyll / Hugo website
+  * Deploy a Wordpress website
+  * Deploy Moodle
+  * Deploy Ghost
 
 ## ☸️ Goals
 
