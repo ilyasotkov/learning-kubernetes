@@ -6,7 +6,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
 
 ### 1. Create a Kubernetes cluster
 
-  * Create a Kubernetes cluster from cloud provider resources
+  * Create a Kubernetes cluster using a cloud provider's resources
     * Amazon AWS
     * Google GCP
     * Microsoft Azure
@@ -18,15 +18,18 @@ Here's a proposal table of contents that attemps to make *the most sense*:
 ### 2. Configure and administer a Kubernetes cluster
 
 #### Human access to Kubernetes API
-  * Authentication for Kubernetes API access via client tools (`kubectl` and `helm`)
-  * Local `~/.kube/config` for `kubectl`
-  * Set up authentication for fellow human users
+  * Accessing the Kubernetes API using local client tools, `kubectl` and `helm`
+  * Configure a local `kind: Config` file at `~/.kube/config`
+  * Set up authentication for co-workers
     * Default Cloud Authentication
-      * GKE
+      * GKE and GCP service accounts
       * ...
-    * Using tokens
+    * Using static basic auth
+    * Using static token CSV files
     * Using x509 client certificates
     * Using Keystone for authentication
+    * Using OpenID Connect
+    * Webhook token authentication (GitHub)
   * Set up RBAC to prevent Bob from destroying Alice's work
 
 #### Storage
