@@ -20,18 +20,18 @@
 
 - [📋 How do I turn a bare Kubernetes installation into a production cluster?](/)
 - [Authentication (granting access)](/)
-- Authorization (limiting access)
-- Persistent storage
-- Networking, load balancing, ingress management
-- Monitoring and alerting
-- Continous integration (CI) tools
+- [Authorization (limiting access)](/)
+- [Persistent storage](/)
+- [Networking, load balancing, ingress management](/)
+- [Monitoring and alerting](/)
+- [Continous integration (CI) tools](/)
 
 ### 3. Use a Kubernetes cluster
 
 - [📋 What's the best way to consume Kubernetes cluster resources?](/)
-- Create a Helm chart
-- Install a Helm chart
-- Manage Helm releases
+- [Create a Helm chart](/)
+- [Install a Helm chart](/)
+- [Manage Helm releases](/)
 
 ## ☸️ Goals
 
