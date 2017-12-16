@@ -12,14 +12,14 @@
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
 
-[📋 How are Kubernetes clusters created and managed?](/labs/lab1/)
+[📋 Lab Overview: How are Kubernetes clusters created and managed?](/labs/lab1/)
 
-- [Create a Kubernetes cluster](/labs/lab1/)
-- [Upgrade a Kubernetes cluster](/labs/lab1/)
+- [Create a Kubernetes cluster](/labs/lab1/create-a-cluster.md)
+- [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-a-cluster.md)
 
 ### Lab 2: Administer and configure a Kubernetes cluster
 
-[📋 How do I turn a bare Kubernetes installation into a production cluster?](/labs/lab2/)
+[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production cluster?](/labs/lab2/)
 
 - [Authentication (granting access)](/labs/lab2/)
 - [Authorization (limiting access)](/labs/lab2/)
@@ -30,7 +30,7 @@
 
 ### Lab 3: Use a Kubernetes cluster
 
-[📋 What's the best way to consume Kubernetes cluster resources?](/labs/lab3/)
+[📋 Lab Overview: What's the best way to consume Kubernetes cluster resources?](/labs/lab3/)
 
 - [Create a Helm chart](/labs/lab3/)
 - [Install a Helm chart](/labs/lab3/)
