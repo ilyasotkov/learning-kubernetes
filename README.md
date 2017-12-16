@@ -20,14 +20,14 @@
 
 ### Lab 2: Administer and configure a Kubernetes cluster
 
-[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production cluster?](/labs/lab2/)
+[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/)
 
-- [Authentication (granting access)](/labs/lab2/)
-- [Authorization (limiting access)](/labs/lab2/)
+- [Authentication: allow access to cluster resources](/labs/lab2/)
+- [Authorization: limit access to cluster resources](/labs/lab2/)
 - [Persistent storage](/labs/lab2/)
 - [Networking, load balancing, ingress management](/labs/lab2/)
 - [Monitoring and alerting](/labs/lab2/)
-- [Continous integration (CI) tools](/labs/lab2/)
+- [Continous Integration (CI) tools](/labs/lab2/)
 
 ### Lab 3: Use a Kubernetes cluster
 
