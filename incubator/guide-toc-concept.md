@@ -13,7 +13,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * OpenStack
     * Custom: bare metal or raw virtual resources
 
-### 2. Administer a Kubernetes cluster
+### 2. Administer Kubernetes clusters
 
 #### Authentication (login) to a Kubernetes cluster API
 
@@ -67,7 +67,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * GitLab
   * ⬇️ Go to the next step to test Continous Deployment ⬇️
 
-### 3. Use a Kubernetes cluster (deploy apps)
+### 3. Use Kubernetes clusters (deploy apps onto clusters)
 
   * Jekyll, Hugo static websites
   * A Rails/React app
