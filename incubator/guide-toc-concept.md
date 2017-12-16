@@ -4,7 +4,7 @@ Learning Kubernetes should be a fluid process that just *makes sense*. Documenta
 
 Here's a proposal table of contents that attemps to make *the most sense*:
 
-### 1. Create a Kubernetes cluster
+### 1. Rent Kubernetes clusters from cloud providers
 
   * Create and upgrade a Kubernetes cluster
     * Amazon AKS
@@ -13,7 +13,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * OpenStack
     * Custom: bare metal or raw virtual resources
 
-### 2. Configure and administer a Kubernetes cluster
+### 2. Administer a Kubernetes cluster
 
 #### Authentication (login) to a Kubernetes cluster API
 
@@ -48,7 +48,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * kube-lego (Let's Encrypt TLS)
     * Istio Framework
 
-#### Monitoring and Alerting
+#### Monitoring and alerting
 
   * Deploy a number of monitoring tools
     * Prometheus
@@ -56,7 +56,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * ...
   * Set up alerting
 
-#### Continous Integration Tools
+#### Continous Integration tools
 
   * Deploy any Continous Delivery / Continous Deployment tools
     * CI / CD
@@ -67,7 +67,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * GitLab
   * ⬇️ Go to the next step to test Continous Deployment ⬇️
 
-### 3. Deploy a number of apps (via Helm packages) into the `hello-world` namespace
+### 3. Use a Kubernetes cluster (deploy apps)
 
   * Jekyll, Hugo static websites
   * A Rails/React app
