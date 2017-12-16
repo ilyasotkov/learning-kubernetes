@@ -21,11 +21,9 @@
   * Monitoring and alerting
   * Continous integration (CI) tools
 3. [Use a Kubernetes cluster](/)
-  * Deploy a new Rails app
-  * Deploy a static Jekyll / Hugo website
-  * Deploy a Wordpress website
-  * Deploy Moodle
-  * Deploy Ghost
+  * Create a Helm chart
+  * Install a Helm chart
+  * Manage Helm releases
 
 ## ☸️ Goals
 
