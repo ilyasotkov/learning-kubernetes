@@ -8,22 +8,35 @@
 
 ⚠️ Project is experimental / in pre-alpha
 
-## 📘 Docs / Guidebook
+## ⚗️ Labs
 
-1. [Introduction and Overview](/docs/01-intro/)
-2. [Managing Cloud Providers](/docs/02-clouds/)
-3. [Administering Kubernetes Clusters](/docs/03-administration)
-4. [Using Kubernetes Clusters](/docs/04-usage)
-5. [Managing Helm Charts and Releases](/docs/05-charts-and-releases)
+### Lab 1: Create and upgrade a Kubernetes cluster
 
-### 📕 Extra reading
+[📋 Lab Overview: How are Kubernetes clusters created and managed?](/labs/lab1/)
 
-- [Comparing turnkey Kubernetes cluster solutions: GKE, AKS, EKS](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters)
-- [Emerging Kubernetes Tools: Declarative Helm, Istio framework](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/incubator)
-- [Moving to declarative model on Google Kubernetes Engine](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/clusters/gke)
-- [Creating a generic Rails 5.1 / Puma / PostgreSQL / React  Helm Chart](https://github.com/ilyasotkov/learning-kubernetes/tree/develop/charts/rails-app)
+- [Create a Kubernetes cluster](/labs/lab1/create-a-cluster.md)
+- [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-a-cluster.md)
 
-## ☸️ Goals
+### Lab 2: Administer and configure a Kubernetes cluster
+
+[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production cluster?](/labs/lab2/)
+
+- [Authentication (granting access)](/labs/lab2/)
+- [Authorization (limiting access)](/labs/lab2/)
+- [Persistent storage](/labs/lab2/)
+- [Networking, load balancing, ingress management](/labs/lab2/)
+- [Monitoring and alerting](/labs/lab2/)
+- [Continous integration (CI) tools](/labs/lab2/)
+
+### Lab 3: Use a Kubernetes cluster
+
+[📋 Lab Overview: What's the best way to consume Kubernetes cluster resources?](/labs/lab3/)
+
+- [Create a Helm chart](/labs/lab3/)
+- [Install a Helm chart](/labs/lab3/)
+- [Manage Helm releases](/labs/lab3/)
+
+## 📌 Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
 - Estabilish a smooth *declarative* workflow for deploying containerized services to Kubernetes clusters
