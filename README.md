@@ -12,29 +12,29 @@
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
 
-[📋 How are Kubernetes clusters created and managed?](/)
+[📋 How are Kubernetes clusters created and managed?](/labs/lab1/)
 
-- [Create a Kubernetes cluster](/)
-- [Upgrade a Kubernetes cluster](/)
+- [Create a Kubernetes cluster](/labs/lab1/)
+- [Upgrade a Kubernetes cluster](/labs/lab1/)
 
 ### Lab 2: Administer and configure a Kubernetes cluster
 
-[📋 How do I turn a bare Kubernetes installation into a production cluster?](/)
+[📋 How do I turn a bare Kubernetes installation into a production cluster?](/labs/lab2/)
 
-- [Authentication (granting access)](/)
-- [Authorization (limiting access)](/)
-- [Persistent storage](/)
-- [Networking, load balancing, ingress management](/)
-- [Monitoring and alerting](/)
-- [Continous integration (CI) tools](/)
+- [Authentication (granting access)](/labs/lab2/)
+- [Authorization (limiting access)](/labs/lab2/)
+- [Persistent storage](/labs/lab2/)
+- [Networking, load balancing, ingress management](/labs/lab2/)
+- [Monitoring and alerting](/labs/lab2/)
+- [Continous integration (CI) tools](/labs/lab2/)
 
 ### Lab 3: Use a Kubernetes cluster
 
-[📋 What's the best way to consume Kubernetes cluster resources?](/)
+[📋 What's the best way to consume Kubernetes cluster resources?](/labs/lab3/)
 
-- [Create a Helm chart](/)
-- [Install a Helm chart](/)
-- [Manage Helm releases](/)
+- [Create a Helm chart](/labs/lab3/)
+- [Install a Helm chart](/labs/lab3/)
+- [Manage Helm releases](/labs/lab3/)
 
 ## 📌 Goals
 
