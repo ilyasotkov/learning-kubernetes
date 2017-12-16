@@ -29,6 +29,10 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * Using Keystone for authentication
     * Using OpenID Connect
     * Webhook token authentication (GitHub)
+
+#### Restrict access to Kubernetes clusters
+
+  * Role-Based Access Control
   * Set up RBAC to prevent Bob from destroying Alice's work
 
 #### Storage
