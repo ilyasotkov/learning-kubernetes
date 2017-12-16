@@ -6,20 +6,19 @@ Here's a proposal table of contents that attemps to make *the most sense*:
 
 ### 1. Create a Kubernetes cluster
 
-  * Create a Kubernetes cluster using a cloud provider's resources
-    * Amazon AWS
-    * Google GCP
-    * Microsoft Azure
+  * Create and upgrade a Kubernetes cluster
+    * Amazon AKS
+    * Google GKE
+    * Microsoft Azure AKS
     * OpenStack
     * Custom: bare metal or raw virtual resources
-  * Upgrade a Kubernetes cluster
-  * Maintain a Kubernetes cluster
 
 ### 2. Configure and administer a Kubernetes cluster
 
-#### Human access to Kubernetes API
+#### Authentication (login) to a Kubernetes cluster API
+
   * Accessing the Kubernetes API using local client tools, `kubectl` and `helm`
-  * Configure a local `kind: Config` file at `~/.kube/config`
+  * Configure a local `kind: Config` file in `~/.kube/config`
   * Set up authentication for co-workers
     * Default Cloud Authentication
       * GKE and GCP service accounts
@@ -34,14 +33,16 @@ Here's a proposal table of contents that attemps to make *the most sense*:
 
 #### Storage
 
-  * Set up StorageClasses
+  * Default StorageClasses
+  * Set up custom StorageClasses
   * Create `PersistentVolumeClaim` using the StorageClasses
 
 #### Networking
 
   * Set up an Ingress Controller (LoadBalancer) and TLS certificates
-    * nginx ingress
-    * ...
+    * NGINX Ingress Controller
+    * kube-lego (Let's Encrypt TLS)
+    * Istio Framework
 
 #### Monitoring and Alerting
 
@@ -49,7 +50,7 @@ Here's a proposal table of contents that attemps to make *the most sense*:
     * Prometheus
     * Grafana
     * ...
-  * Test monitoring alerts and correct data sources
+  * Set up alerting
 
 #### Continous Integration Tools
 
