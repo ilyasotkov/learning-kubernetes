@@ -4,23 +4,24 @@ Learning Kubernetes should be a fluid process that just *makes sense*. Documenta
 
 Here's a proposal table of contents that attemps to make *the most sense*:
 
-### 1. Rent Kubernetes clusters from cloud providers
+### 1. Use cloud services to host Kubernetes clusters
 
-  * Create and upgrade a Kubernetes cluster
+  * [Create a Kubernetes cluster](/docs/)
     * Amazon AKS
-    * Google GKE
+    * [Google GKE](/docs/)
     * Microsoft Azure AKS
     * OpenStack
     * Custom: bare metal or raw virtual resources
+  * [Upgrade a Kubernetes cluster](/docs/)
 
 ### 2. Administer Kubernetes clusters
 
 #### Authentication (login) to a Kubernetes cluster API
 
-  * Accessing the Kubernetes API using local client tools, `kubectl` and `helm`
+  * Access the Kubernetes API using local client tools, `kubectl` and `helm`
   * Configure a local `kind: Config` file in `~/.kube/config`
   * Set up authentication for co-workers
-    * Default Cloud Authentication
+    * Default cloud provider authentication
       * GKE and GCP service accounts
       * ...
     * Using static basic auth
