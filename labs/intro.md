@@ -9,8 +9,9 @@ If you're wondering how it compares to hosting non-containerized apps, here's a 
 | Solution | Physical Hardware (Data Center) | Virtual Hardware | Container Runtime | Orchestrator |
 | --- | --- | --- | --- | --- |
 | Bare-metal deployments | On-premises data center | ❌ | ❌ | ❌ |
-| On-premises Virtual Hardware (VM) deployments | On-premises data center | VMware vSphere | ❌ | ❌ |
-| On-premises Docker + Kubernetes Deployments | On-premises data center | VMware vSphere | Docker | Kubernetes |
+| On-premises VM deployments | On-premises data center | VMware vSphere | ❌ | ❌ |
+| On-premises Docker + Kubernetes deployments | On-premises data center | VMware vSphere | Docker | Kubernetes |
+| Cloud VM deployments: EC2, GCE, Linode, Scaleway | ☁️ | ☁️ | ❌ | ❌ |
 | GKE, EKS, AKS | ☁️ | ☁️ | Docker | Kubernetes |
 
 ### Kubernetes platform inputs and outputs
