@@ -25,7 +25,7 @@
 - [Authentication: allow access to cluster resources](/labs/lab2/)
 - [Authorization: limit access to cluster resources](/labs/lab2/)
 - [Persistent storage](/labs/lab2/)
-- [Networking, load balancing, ingress management](/labs/lab2/)
+- [Networking, load balancing, and ingress management](/labs/lab2/)
 - [Monitoring and alerting](/labs/lab2/)
 - [Continous Integration (CI) tools](/labs/lab2/)
 
