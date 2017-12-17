@@ -7,7 +7,8 @@ Kubernetes is an open-source platform for consuming cloud **compute, storage, an
 If you're wondering how it compares to hosting non-containerized apps, here's a comparison table:
 
 - 🛠 means installation is your responsibility
-- ☁️ means installation is managed by the cloud
+- ☁️ means installation is managed by the cloud provider
+- ❌ means the component is not implemented
 
 | Solution | Physical Hardware (Data Center) | Virtual Hardware | Container Runtime | Orchestrator |
 | --- | --- | --- | --- | --- |
@@ -17,6 +18,22 @@ If you're wondering how it compares to hosting non-containerized apps, here's a 
 | On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker | 🛠 Kubernetes |
 | Manual cloud Kubernetes installation | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
 | Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker | ☁️ Kubernetes |
+
+### Bare metal
+
+Many years ago, the only way for a company to deploy software was to invest into building a data center, then deploy software directly on the bare metal (with an OS installed). At a scale, you'd meet the dreaded configuration drift, snowflake servers, and fear to touch anything that's already working. And everything was painfully slow.
+
+### Virtual Hardware
+
+TODO
+
+VMs and Hypervisors, cloud VMs: computationally expensive virtualization, mostly same problems as bare metal
+
+### Containers
+
+TODO
+
+Containers, Docker and Kubernetes: cheap to create virtualization, microservices architecture
 
 ### Kubernetes platform inputs and outputs
 
