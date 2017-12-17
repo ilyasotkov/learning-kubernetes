@@ -1,6 +1,6 @@
 # Project Introduction and Concepts
 
-## What is Kubernetes?
+## 🤔 What is Kubernetes?
 
 Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized services or applications.
 
@@ -20,12 +20,12 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 - A highly-available, production-grade application or service running in a cloud
 
-## Project goals
+## 📌 Project goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
 - Establish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
-## Compare Kubernetes to non-containerized infrastructure
+## ➗ Compare Kubernetes to non-containerized infrastructure
 
 If you're wondering how it compares to hosting non-containerized apps, here are two comparison tables, for both on-premises and public cloud infrastructure:
 
