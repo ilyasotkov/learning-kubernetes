@@ -14,7 +14,7 @@
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
 
-[📋 Lab Overview: How do I create a Kubernetes cluster and how do I maintain it?](/labs/lab1/)
+[📋 Lab Overview: How do I create a Kubernetes cluster and how do I maintain it?](/labs/lab1/overview.md)
 
 - [Create a Kubernetes cluster](/labs/lab1/create-cluster.md)
 - [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-cluster.md)
