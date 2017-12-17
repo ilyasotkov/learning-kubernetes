@@ -14,5 +14,7 @@ The result is that you can always know the state of your infrastructure by simpl
 
 You're you're free to use a text editor of your choice (like Atom or Vim) and you're free to use a git interface of your choice (GitUp, Sourcetree, or Git CLI).
 
-**Imperative verbs**: `get`, `list`, `create`, `delete`, `init`, `add`, `rollback`, etc.
-**Declarative verbs**: `apply` and `destroy`.
+| Workflow | Actions |
+| --- | --- |
+| Imperative | `get`, `list`, `create`, `delete`, `init`, `add`, `rollback`, etc. |
+| Declarative | `apply` and `destroy` |
