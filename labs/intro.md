@@ -40,9 +40,9 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 | Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
 | --- | --- | --- | --- |
-| Non-containerized raw cloud VMs | ☁️ Hardware | ☁️ VMs | ❌ |
-| Raw cloud VM Kubernetes | ☁️ Hardware | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
-| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker + Kubernetes |
+| Non-containerized raw cloud VMs | ☁️ data center | ☁️ VMs | ❌ |
+| Raw cloud VM Kubernetes | ☁️ data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
+| Hosted Kubernetes: GKE, EKS, AKS | ☁️ data center | ☁️ VMs | ☁️ Docker + Kubernetes |
 
 ## Everything as code
 
