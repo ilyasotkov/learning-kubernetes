@@ -13,6 +13,11 @@ Kubernetes is an open-source platform for consuming cloud **compute, storage, an
 
 A scalable production-grade application or service running in a cloud.
 
+## Project goals
+
+- Learn to set up and administer Kubernetes clusters of any scale
+- Estabilish a smooth *declarative* workflow for deploying containerized services to Kubernetes clusters
+
 ## Everything as code
 
 In our labs, we keep our use of CLIs and GUIs to a minimum, instead looking to express **the desired state** of any external resources **in code** that can be committed to a git repository and managed with a familiar developer workflow, like [git-flow](/) or [GitHub Flow](/).
