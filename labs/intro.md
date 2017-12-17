@@ -2,11 +2,20 @@
 
 ## What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most mature orchestrator for containerized applications.
+Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications, a competitor to Docker Swarm mode or Apache Mesos.
+
+If you're wondering how it compares to hosting non-containerized apps, here's a comparison table:
+
+| Solution | Physical Hardware (Data Center) | Virtual Hardware | Container Runtime | Orchestrator |
+| --- | --- | --- | --- | --- |
+| Bare-metal deployments | On-premises data center | ❌ | ❌ | ❌ |
+| On-premises Virtual Hardware (VM) deployments | On-premises data center | VMware vSphere | ❌ | ❌ |
+| On-premises Docker + Kubernetes Deployments | On-premises data center | VMware vSphere | Docker | Kubernetes |
+| GKE, EKS, AKS | ☁️ | ☁️ | Docker | Kubernetes |
 
 **Kubernetes inputs**:
 
-- Container images (created from Dockerfiles) in some private or public container image registry
+- Container images (built from Dockerfiles) in some private or public container image registry
 - A collection of Kubernetes API objects expressed as YAML markup
 
 **Kubernetes output**:
@@ -16,7 +25,7 @@ A scalable production-grade application or service running in a cloud.
 ## Project goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
-- Estabilish a smooth *declarative* workflow for deploying containerized services to Kubernetes clusters
+- Estabilish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
 ## Everything as code
 
