@@ -32,7 +32,7 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 ### On-premises infrastructure (bare-metal data centers)
 
-| Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
+| Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |
 | On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ |
 | On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ |
@@ -40,7 +40,7 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 ### Public cloud infrastructure
 
-| Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
+| Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |
 | Non-containerized raw cloud VMs | ☁️ Data center | ☁️ VMs | ❌ |
 | Raw cloud VM Kubernetes | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
