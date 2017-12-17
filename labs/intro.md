@@ -18,7 +18,7 @@ Kubernetes is an open-source platform for consuming cloud **compute, storage, an
 ## Project goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
-- Estabilish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
+- Establish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
 ## Compare Kubernetes to non-containerized infrastructure
 

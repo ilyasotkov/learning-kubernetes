@@ -42,7 +42,7 @@
 ## 📌 Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
-- Estabilish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
+- Establish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 - Get familiar with the *Kubernetes Docs* at [https://kubernetes.io/docs](https://kubernetes.io/docs)
 - Read real-world [case studies](https://github.com/ramitsurana/awesome-kubernetes#case-studies)
 
