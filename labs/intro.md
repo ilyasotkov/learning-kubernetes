@@ -2,7 +2,23 @@
 
 ## What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications, a competitor to Docker Swarm mode or Apache Mesos.
+Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications, a competitor to Docker Swarm mode.
+
+### Kubernetes Inputs and Outputs
+
+#### Kubernetes inputs
+
+- Container images (that are built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
+- A collection of Kubernetes API objects expressed in YAML markup usually packaged with [Helm](https://helm.sh/)
+
+#### Kubernetes output
+
+- A highly-available, production-grade application or service running in a cloud
+
+## Project goals
+
+- Learn to set up and administer Kubernetes clusters of any scale
+- Estabilish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
 ## Compare Kubernetes to non-containerized infrastructure
 
@@ -27,38 +43,6 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 | Non-containerized raw cloud VMs | ☁️ Hardware | ☁️ VMs | ❌ | ❌ |
 | Raw cloud VM Kubernetes | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
 | Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker | ☁️ Kubernetes |
-
-### Bare metal
-
-Many years ago, the only way for a company to deploy software was to invest into building a data center, then deploy software directly on the bare metal (with an OS installed). At a scale, you'd meet the dreaded configuration drift, snowflake servers, and fear to touch anything that's already working. And everything was painfully slow.
-
-### Virtual Hardware
-
-TODO
-
-VMs and Hypervisors, cloud VMs: computationally expensive virtualization, mostly same problems as bare metal
-
-### Containers
-
-TODO
-
-Containers, Docker and Kubernetes: cheap to create virtualization, microservices architecture
-
-### Kubernetes platform inputs and outputs
-
-**Kubernetes inputs**:
-
-- Container images (built from Dockerfiles) in some private or public container image registry
-- A collection of Kubernetes API objects expressed as YAML markup
-
-**Kubernetes output**:
-
-A scalable production-grade application or service running in a cloud.
-
-## Project goals
-
-- Learn to set up and administer Kubernetes clusters of any scale
-- Estabilish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
 ## Everything as code
 
