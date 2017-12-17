@@ -4,19 +4,28 @@
 
 Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications, a competitor to Docker Swarm mode or Apache Mesos.
 
-If you're wondering how it compares to hosting non-containerized apps, here's a comparison table:
+## Compare Kubernetes to non-containerized infrastructure
+
+If you're wondering how it compares to hosting non-containerized apps, here are two comparison tables, for both on-premises and public cloud infrastructure:
 
 - 🛠 means installation is your responsibility
 - ☁️ means installation is managed by the cloud provider
 - ❌ means the component is not implemented
 
-| Solution | Physical Hardware (Data Center) | Virtual Hardware | Container Runtime | Orchestrator |
+### On-premises infrastructure (bare-metal data centers)
+
+| Solution | Physical Hardware | Virtual Hardware | Container Runtime | Orchestrator |
 | --- | --- | --- | --- | --- |
 | On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ | ❌ |
 | On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ | ❌ |
-| Cloud virtual hardware deployments: EC2, GCE, Linode, Scaleway | ☁️ Hardware | ☁️ VMs | ❌ | ❌ |
 | On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker | 🛠 Kubernetes |
-| Manual cloud Kubernetes installation | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
+
+### Public cloud infrastructure
+
+| Solution | Physical Hardware | Virtual Hardware | Container Runtime | Orchestrator |
+| --- | --- | --- | --- | --- |
+| Non-containerized raw cloud VMs | ☁️ Hardware | ☁️ VMs | ❌ | ❌ |
+| Raw cloud VM Kubernetes | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
 | Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker | ☁️ Kubernetes |
 
 ### Bare metal
