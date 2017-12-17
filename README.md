@@ -10,7 +10,7 @@
 
 ## ⚗️ Labs
 
-[📋 What is Kubernetes? What does this project achieve? How does it indend to achieve it?](/labs/intro.md)
+[📍 What is Kubernetes? What does this project achieve? How does it indend to achieve it?](/labs/intro.md)
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
 
