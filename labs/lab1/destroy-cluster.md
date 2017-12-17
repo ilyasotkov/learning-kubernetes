@@ -1,3 +1,7 @@
 # Destroy a Kubernetes cluster
 
-TODO
+## Hosted Kubernetes
+
+```sh
+terraform destroy
+```
