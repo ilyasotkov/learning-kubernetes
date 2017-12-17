@@ -2,7 +2,7 @@
 
 ## What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications, a competitor to Docker Swarm mode.
+Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications and services.
 
 ### Kubernetes Inputs and Outputs
 
