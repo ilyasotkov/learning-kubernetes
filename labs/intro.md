@@ -1,6 +1,6 @@
-## Project Introduction and Concepts
+# Project Introduction and Concepts
 
-### What is Kubernetes?
+## What is Kubernetes?
 
 Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most mature orchestrator for containerized applications.
 
@@ -13,7 +13,7 @@ Kubernetes is an open-source platform for consuming cloud **compute, storage, an
 
 A scalable production-grade application or service running in a cloud.
 
-### Everything as code
+## Everything as code
 
 In our labs, we keep our use of CLIs and GUIs to a minimum, instead looking to express **the desired state** of any external resources **in code** that can be committed to a git repository and managed with a familiar developer workflow, like [git-flow](/) or [GitHub Flow](/).
 
