@@ -30,19 +30,19 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 ### On-premises infrastructure (bare-metal data centers)
 
-| Solution | Physical Hardware | Virtual Hardware | Container Runtime | Orchestrator |
-| --- | --- | --- | --- | --- |
-| On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ | ❌ |
-| On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ | ❌ |
-| On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker | 🛠 Kubernetes |
+| Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
+| --- | --- | --- | --- |
+| On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ |
+| On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ |
+| On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker + Kubernetes |
 
 ### Public cloud infrastructure
 
-| Solution | Physical Hardware | Virtual Hardware | Container Runtime | Orchestrator |
-| --- | --- | --- | --- | --- |
-| Non-containerized raw cloud VMs | ☁️ Hardware | ☁️ VMs | ❌ | ❌ |
-| Raw cloud VM Kubernetes | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
-| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker | ☁️ Kubernetes |
+| Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
+| --- | --- | --- | --- |
+| Non-containerized raw cloud VMs | ☁️ Hardware | ☁️ VMs | ❌ |
+| Raw cloud VM Kubernetes | ☁️ Hardware | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
+| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker + Kubernetes |
 
 ## Everything as code
 
