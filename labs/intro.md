@@ -6,13 +6,17 @@ Kubernetes is an open-source platform for consuming cloud **compute, storage, an
 
 If you're wondering how it compares to hosting non-containerized apps, here's a comparison table:
 
+- 🛠 means installation is your responsibility
+- ☁️ means installation is managed by the cloud
+
 | Solution | Physical Hardware (Data Center) | Virtual Hardware | Container Runtime | Orchestrator |
 | --- | --- | --- | --- | --- |
-| Bare-metal deployments | On-premises data center | ❌ | ❌ | ❌ |
-| On-premises VM deployments | On-premises data center | VMware vSphere | ❌ | ❌ |
-| On-premises Docker + Kubernetes deployments | On-premises data center | VMware vSphere | Docker | Kubernetes |
-| Cloud VM deployments: EC2, GCE, Linode, Scaleway | ☁️ | ☁️ | ❌ | ❌ |
-| GKE, EKS, AKS | ☁️ | ☁️ | Docker | Kubernetes |
+| On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ | ❌ |
+| On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ | ❌ |
+| Cloud virtual hardware deployments: EC2, GCE, Linode, Scaleway | ☁️ Hardware | ☁️ VMs | ❌ | ❌ |
+| On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker | 🛠 Kubernetes |
+| Manual cloud Kubernetes installation | ☁️ Hardware | ☁️ VMs | 🛠 Docker (via kops) | 🛠 Kubernetes (via kops) |
+| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Hardware | ☁️ VMs | ☁️ Docker | ☁️ Kubernetes |
 
 ### Kubernetes platform inputs and outputs
 
