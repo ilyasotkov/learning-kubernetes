@@ -9,9 +9,10 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 #### Kubernetes inputs
 
 - One or more container images (built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
-- A collection of Kubernetes API objects expressed in YAML markup usually pre-packaged with [Helm](https://helm.sh/)
-
-TODO Add Kubernetes API example objects
+- A collection of Kubernetes API objects expressed in YAML markup usually pre-packaged with [Helm](https://helm.sh/), e.g.
+  - Workloads: `Deployment`, `DaemonSet`
+  - Storage: `PersistentVolumeClaim`
+  - Networking: `Service`, `Ingress`
 
 #### Kubernetes output
 
