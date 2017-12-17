@@ -13,6 +13,8 @@ If you're wondering how it compares to hosting non-containerized apps, here's a 
 | On-premises Docker + Kubernetes Deployments | On-premises data center | VMware vSphere | Docker | Kubernetes |
 | GKE, EKS, AKS | ☁️ | ☁️ | Docker | Kubernetes |
 
+### Kubernetes platform inputs and outputs
+
 **Kubernetes inputs**:
 
 - Container images (built from Dockerfiles) in some private or public container image registry
