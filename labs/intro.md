@@ -2,14 +2,16 @@
 
 ## What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute, storage, and networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized applications and services.
+Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized services or applications.
 
 ### Kubernetes Inputs and Outputs
 
 #### Kubernetes inputs
 
-- Container images (that are built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
+- One or more container images (built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
 - A collection of Kubernetes API objects expressed in YAML markup usually pre-packaged with [Helm](https://helm.sh/)
+
+TODO Add Kubernetes API example objects
 
 #### Kubernetes output
 
@@ -40,6 +42,6 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 | Solution | Physical Hardware | Virtual Hardware | Container Runtime + Orchestrator |
 | --- | --- | --- | --- |
-| Non-containerized raw cloud VMs | ☁️ data center | ☁️ VMs | ❌ |
-| Raw cloud VM Kubernetes | ☁️ data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
-| Hosted Kubernetes: GKE, EKS, AKS | ☁️ data center | ☁️ VMs | ☁️ Docker + Kubernetes |
+| Non-containerized raw cloud VMs | ☁️ Data center | ☁️ VMs | ❌ |
+| Raw cloud VM Kubernetes | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
+| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Data center | ☁️ VMs | ☁️ Docker + Kubernetes |
