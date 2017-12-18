@@ -4,7 +4,9 @@
 
 ### GKE
 
-All commited changes to the `gke-cluster.tf` can be applied by `terraform apply` and handled by the CI pipeline.
+Just change the cluster definition in `gke-cluster.tf` and apply the changes by running `terraform apply`.
+
+**TODO:** application through a CI pipeline on git push
 
 #### ⚠️ Terraform GKE outstanding issues
 
