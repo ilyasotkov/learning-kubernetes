@@ -16,8 +16,6 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 😜 YAML/JSON Kubernetes API objects are often parametrized (pre-processed) and packaged together using [Helm](https://helm.sh/)
 
-**TODO**: Write about similarity of HTML+CSS+JS packages for browsers and Kubernetes/YAML for Kuberntes API Server
-
 #### Kubernetes output
 
 - A highly-available, production-grade application or service running in a cloud
