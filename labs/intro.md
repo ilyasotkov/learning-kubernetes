@@ -33,7 +33,7 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 - ☁️ means installation is managed by the cloud provider
 - ❌ means the component is not implemented
 
-### On-premises infrastructure (bare-metal data centers)
+### Private cloud infrastructure (on-premises data centers)
 
 | Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |

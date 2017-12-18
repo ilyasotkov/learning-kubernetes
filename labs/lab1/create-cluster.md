@@ -1,6 +1,6 @@
 # Create a Kubernetes cluster
 
-## 👌 Hosted Kubernetes on GKE, AKS, EKS
+## Hosted Kubernetes on GKE, AKS, EKS
 
 ### Google Kubernetes Engine (GKE)
 
