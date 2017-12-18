@@ -17,3 +17,7 @@ You can tear down a cluster by running `terraform destroy`
 ### EKS
 
 ⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
+
+## Up next
+
+[Lab 2 Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/overview.md)

@@ -21,3 +21,7 @@ All commited changes to the `gke-cluster.tf` can be applied by `terraform apply`
 ### EKS
 
 ⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
+
+## Up next
+
+[Destroy a Kubernetes cluster](/labs/lab1/destroy-cluster.md)
