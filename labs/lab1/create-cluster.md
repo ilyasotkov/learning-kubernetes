@@ -58,3 +58,7 @@ resource "google_container_cluster" "my-cluster" {
 
 5. Connect to the cluster by configuring `~/.kube/config`
 6. Go to [Lab 2](/labs/lab2/overview.md) to get the cluster ready for production
+
+## Up next
+
+[Upgrade a Kubernetes cluster](/labs/lab1/upgrade-cluster.md)
