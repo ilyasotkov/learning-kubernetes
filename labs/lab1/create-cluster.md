@@ -2,10 +2,6 @@
 
 ## 👌 Hosted Kubernetes on GKE, AKS, EKS
 
-### Amazon Elastic Container Service for Kubernetes (Amazon EKS)
-
-⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
-
 ### Google Kubernetes Engine (GKE)
 
 Hosted Kubernetes clusters are easy to create and manage. On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubernetes-engine/pricing) that using normal GCE instances. Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
@@ -58,6 +54,14 @@ resource "google_container_cluster" "my-cluster" {
 
 5. Connect to the cluster by configuring `~/.kube/config`
 6. Go to [Lab 2](/labs/lab2/overview.md) to get the cluster ready for production
+
+### Microsoft Azure Container Service for Kubernetes (AKS)
+
+⚠️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471). If you insist on using AKS *now*, use Azure's GUI or CLI.
+
+### Amazon Elastic Container Service for Kubernetes (Amazon EKS)
+
+⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
 
 ## Up next
 
