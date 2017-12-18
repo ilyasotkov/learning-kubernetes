@@ -9,4 +9,4 @@ Hosted Kubernetes clusters are easy to use. On GKE, using Kubernetes will [cost 
 3. Set up `gcloud` CLI locally
 4. Create cluster via creating 1 `cluster.tf` file and running `terraform apply`
 5. Connect to the cluster by configuring `~/.kube/config`
-6. Go to [Lab 2](/) to get the cluster ready for production
+6. Go to [Lab 2](/labs/lab1/create-cluster.md) to get the cluster ready for production
