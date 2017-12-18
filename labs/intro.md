@@ -14,7 +14,7 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
   - Storage objects: `PersistentVolumeClaim`
   - Networking objects: `Service`, `Ingress`
 
-😜 YAML/JSON Kubernetes API objects are often parametrized (pre-processed) and packaged together using [Helm](https://helm.sh/)
+😜 YAML Kubernetes API objects are often parametrized (pre-processed) and packaged together using [Helm](https://helm.sh/)
 
 #### Kubernetes output
 
