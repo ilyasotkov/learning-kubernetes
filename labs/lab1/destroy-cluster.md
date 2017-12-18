@@ -10,7 +10,7 @@ You can tear down a cluster by running `terraform destroy`
 
 - GCP LoadBalancer (created by ingress-nginx) is not deleted using `terraform destroy`
 
-## AKS
+### AKS
 
 ⚠️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471). If you insist on using AKS *now*, use Azure's GUI or CLI.
 
