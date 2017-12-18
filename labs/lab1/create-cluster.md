@@ -8,8 +8,6 @@ Hosted Kubernetes clusters are easy to create and manage. On GKE, using Kubernet
 2. Add credit card info to [Google Cloud Platform](/) (and get free **$300** to spend on the platform)
 3. Set up `gcloud` CLI locally
 4. Create cluster by adding `cluster.tf` file and running `terraform init` and `terraform apply`
-5. Connect to the cluster by configuring `~/.kube/config`
-6. Go to [Lab 2](/labs/lab2/overview.md) to get the cluster ready for production
 
 ```tf
 provider "google" {
@@ -49,3 +47,6 @@ resource "google_container_cluster" "my-cluster" {
   }
 }
 ```
+
+5. Connect to the cluster by configuring `~/.kube/config`
+6. Go to [Lab 2](/labs/lab2/overview.md) to get the cluster ready for production
