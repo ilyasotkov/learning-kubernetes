@@ -22,7 +22,7 @@ A best practice guide to administering and using Kubernetes clusters
 - [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-cluster.md)
 - [Destroy a Kubernetes cluster](/labs/lab1/destroy-cluster.md)
 
-### Lab 2: Administer and configure a Kubernetes cluster
+### Lab 2: Get you cluster ready for production
 
 [📋 Lab Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/)
 
