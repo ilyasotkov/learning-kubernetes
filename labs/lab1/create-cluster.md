@@ -2,6 +2,12 @@
 
 ## 👌 Hosted Kubernetes on GKE, AKS, EKS
 
+### Amazon Elastic Container Service for Kubernetes (Amazon EKS)
+
+⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
+
+### Google Kubernetes Engine (GKE)
+
 Hosted Kubernetes clusters are easy to create and manage. On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubernetes-engine/pricing) that using normal GCE instances. Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
