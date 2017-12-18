@@ -12,8 +12,6 @@
 
 ### GKE
 
-#### ✊ What we want
-
 All commited changes to the `gke-cluster.tf` can be applied by `terraform apply` and handled by the CI pipeline
 
 #### ⚠️ Terraform GKE outstanding issues
