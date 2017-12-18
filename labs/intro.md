@@ -2,17 +2,19 @@
 
 ## 🤔 What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized services or applications.
+Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized services and applications.
 
 ### Kubernetes Inputs and Outputs
 
 #### Kubernetes inputs
 
 - One or more container images (built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
-- A collection of Kubernetes API objects expressed in YAML markup that we will write in a [Helm Chart](https://docs.helm.sh/chart_template_guide/) template, e.g.
+- A collection of Kubernetes API objects expressed in YAML (or JSON) markup, for example:
   - Workload objects: `Deployment`, `DaemonSet`
   - Storage objects: `PersistentVolumeClaim`
   - Networking objects: `Service`, `Ingress`
+
+😜 YAML/JSON Kubernetes API objects are often parametrized (pre-processed) and packaged together using [Helm](https://helm.sh/)
 
 **TODO**: Write about similarity of HTML+CSS+JS packages for browsers and Kubernetes/YAML for Kuberntes API Server
 
