@@ -1,7 +1,19 @@
 # Destroy a Kubernetes cluster
 
-## Hosted Kubernetes
+## Hosted Kubernetes on GKE, AKS, EKS
 
-```sh
-terraform destroy
-```
+### GKE
+
+You can tear down a cluster by running `terraform destroy`
+
+#### ⚠️ Terraform GKE outstanding issues
+
+- GCP LoadBalancer (created by ingress-nginx) is not deleted using `terraform destroy`
+
+## AKS
+
+⚠️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471). If you insist on using AKS *now*, use Azure's GUI or CLI.
+
+### EKS
+
+⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
