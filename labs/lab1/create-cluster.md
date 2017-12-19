@@ -6,7 +6,7 @@ You might now be thinking "Isn't it more expensive than using normal virtual ser
 
 If you want to get familiar with how Kubernetes really works underneath the covers of a hosted Kubernetes solution, I urge you to go through these guides (be prepared to spend some time on these, Kubernetes setup is pretty complicated):
 
-- [https://kubernetes.io/docs/setup/](https://kubernetes.io/docs/setup/)
+- [\[Kubernetes Docs\] Setting up a Kubernetes cluster](https://kubernetes.io/docs/setup/)
 - [\[Kelsey Hightower\] Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
 Let's spin up some Kubernetes clusters! 👏
@@ -16,7 +16,7 @@ Let's spin up some Kubernetes clusters! 👏
 Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
-2. Add credit card info to [Google Cloud Platform](/) (and get free **$300** to spend on the platform)
+2. Add credit card info to [Google Cloud Platform](/) (and get free $300 to spend on the platform)
 3. Set up `gcloud` CLI locally
 4. Create cluster by adding `gke-cluster.tf` file and running `terraform init` and `terraform apply`
 
