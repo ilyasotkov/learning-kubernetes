@@ -4,18 +4,11 @@ In this first lab, we'll go from absolute zero to having a bare Kubernetes insta
 
 ## Lab Overview
 
-In this lab, we will use [Terraform](/) to declaratively spin up a Kubernetes cluster. I want this guide to be as simple as possible, so we're gonna use a *hosted* Kubernetes solution. "Hosted" means that we'll let a cloud provider install and preconfigure the cluster for us instead of doing that manually.
+In the first part of the lab, we'll use [Terraform](/) as a tool for declaratively interacting with a cloud provider.
 
-Hosted Kubernetes clusters are easy to create and manage. The "big three" of public cloud providers — Amazon, Google, Microsoft — have all announced a hosted (managed) Kubernetes platform, with Google Kubernetes Engine being the most mature solution as of late December 2017.
+In the second part of the lab, we'll review situations in which you will want to upgrade your cluster, and how to go about it.
 
-You might now be thinking "Aren't we cheating here? And it's gonna be more expensive, isn't it?"
-
-First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup is pretty complicated):
-
-- [Setup section of the Kubernetes Docs](https://kubernetes.io/docs/setup/)
-- [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
-
-Secondly, hosted Kubernetes will cost you no more than normal compute instances ([AKS](https://azure.microsoft.com/en-us/pricing/details/container-service/), [GKE](https://cloud.google.com/kubernetes-engine/pricing)). That's because cloud providers know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
+In the third part of the lab, we'll tell you how to destroy your cluster (useful for testing to avoid wasting money).
 
 ## Up next
 
