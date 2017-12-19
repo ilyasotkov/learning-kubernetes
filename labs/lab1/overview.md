@@ -10,10 +10,10 @@ You might now be thinking "Aren't we cheating here? And it's gonna be more expen
 
 First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup *is really complicated*):
 
-- [Setup section of the Kubernetes Docs](/)
-- [Kubernetes the Hard Way by Kelsey Hightower](/) ([Ansible](/))
+- [Setup section of the Kubernetes Docs](https://kubernetes.io/docs/setup/)
+- [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
-Secondly, hosted Kubernetes will cost you no more than normal compute instances ([AKS pricing](https://azure.microsoft.com/en-us/pricing/details/container-service/), [GKE pricing](https://cloud.google.com/kubernetes-engine/pricing)). That's because cloud providers know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
+Secondly, hosted Kubernetes will cost you no more than normal compute instances ([AKS pricing](https://azure.microsoft.com/en-us/pricing/details/container-service/), [GKE pricing](https://cloud.google.com/kubernetes-engine/pricing)). That's because cloud providers know that their long-term competitive advantage in cloud cogmputing is state-of-the-art data centers, not proprietary software.
 
 ## Up next
 
