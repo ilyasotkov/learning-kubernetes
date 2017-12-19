@@ -15,16 +15,16 @@ If Kubernetes seems complicated, try looking at the big picture: the inputs you 
 
 In terms of inputs, you need two things:
 
-1. One or more generic (suitable for any environment on any cluster) **container images** for you service or application, located in a private or public container image registry (e.g. [gcr.io](https://gcr.io/), [quay.io](/), [hub.docker.com](/))
-2. One or more YAML files with Kubernetes API object specification. There only a handful of top-level Kubernetes API objects which you'd be authoring yourself in a YAML file, each belongs to one of the *cloud resource category*:
+1. One or more generic (suitable for any environment on any cluster) **container images** for your service or application, located in a private or public container image registry (e.g. [gcr.io](https://gcr.io/), [quay.io](/), [hub.docker.com](/))
+2. One or more YAML files with Kubernetes API object specs. There's only a handful of top-level Kubernetes API objects which you'd be authoring yourself in a YAML file, each belongs to one of the three *cloud resource* categories:
 
 - Compute: `Deployment`, `DaemonSet`, `StatefulSet`, `Job`, `CronJob`
 - Storage: `PersistentVolumeClaim`
 - Networking: `Service`, `Ingress`
 
-Once you send a package of YAML objects to the Kubernetes API server, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
+Once you send that YAML package to the Kubernetes API server, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
 
-**Note:** to make Kubernetes API YAML code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together.
+*Note:* to make Kubernetes API YAML code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together
 
 ## Up next
 
