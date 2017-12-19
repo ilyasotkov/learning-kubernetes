@@ -6,6 +6,8 @@ In this first lab, we'll go from absolute zero to having a bare Kubernetes insta
 
 In this lab, we will use [Terraform](/) to declaratively spin up a Kubernetes cluster. I want this guide to be as simple as possible, so we're gonna use a *hosted* Kubernetes solution. "Hosted" means that we'll let a cloud provider install and preconfigure the cluster for us instead of doing that manually.
 
+Hosted Kubernetes clusters are easy to create and manage. The "big three" of public cloud providers — Amazon, Google, Microsoft — have all announced a hosted (managed) Kubernetes platform, with Google Kubernetes Engine being the most mature solution as of late December 2017.
+
 You might now be thinking "Aren't we cheating here? And it's gonna be more expensive, isn't it?"
 
 First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup is pretty complicated):

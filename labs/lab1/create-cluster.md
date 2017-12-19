@@ -1,11 +1,12 @@
 # Create a Kubernetes cluster
 
-
-Hosted Kubernetes clusters are easy to create and manage. The "big three" of public cloud providers -- Amazon, Google, Microsoft -- have all announced a hosted (managed) Kubernetes platform, with Google Kubernetes Engine being the most mature solution as of late December 2017.
+Let's spin up some Kubernetes clusters! 👏
 
 ## Google Kubernetes Engine (GKE)
 
-On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubernetes-engine/pricing) that using normal GCE instances. Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
+On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubernetes-engine/pricing) that using normal GCE instances 😌
+
+Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
 2. Add credit card info to [Google Cloud Platform](/) (and get free **$300** to spend on the platform)
@@ -16,8 +17,8 @@ On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubern
 # gke-cluster.tf
 
 provider "google" {
-  project = "my-project-999"
-  region  = "europe-west1-d"
+  project = "my-project-999" # Your GCP Project name
+  region  = "europe-west1-d" # Default region
 }
 
 resource "google_container_node_pool" "np" {
