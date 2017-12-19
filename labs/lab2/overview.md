@@ -10,11 +10,11 @@ Second, how do we make sure that teammates are not going to destroy or otherwise
 
 Third, we'll discover how storage works in Kubernetes and how you can add new storage sources for the cluster to use. [Persistent storage](/labs/lab2/)
 
-Fourth, we'll go deploy an ingress controller and TLS certificate controller to have a secure proxy (`Ingress` objects) for publicly available services. [Networking, load balancing, and ingress management](/labs/lab2/)
+Fourth, we'll deploy an ingress controller (`ingress-nginx`) and TLS certificate controller (`kube-lego`) to have a secure proxy (`Ingress` objects) for publicly available services. [Networking, load balancing, and ingress management](/labs/lab2/)
 
-Fifth, we'll set up a system for monitoring cluster state and making sure we're alerted if anything bad happens.
+Fifth, we'll set up a system for monitoring cluster state and making sure we're alerted if anything bad happens. [Monitoring and alerting](/labs/lab2/)
 
-Sixth, we'll provide application developers with an ability to deploy their application automatically via a CI (continous integration) pipeline
+Sixth, we'll provide application developers with an ability to deploy their application automatically via a CI (continous integration) pipeline [Continous Integration (CI) tools](/labs/lab2/)
 
 ## Up next
 
