@@ -13,7 +13,7 @@ First of all, I wouldn't call automation cheating. If you want to get familiar w
 - [Setup section of the Kubernetes Docs](/)
 - [Kubernetes the Hard Way by Kelsey Hightower](/) ([Ansible](/))
 
-Secondly, hosted Kubernetes will cost you no more than hosting normal compute instances, because cloud providers see potential in popularizing Kubernetes and making it *FREE* is the best marketing strategy there is. Amazon, Google, and Microsoft know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
+Secondly, hosted Kubernetes will cost you no more than normal compute instances ([AKS pricing](https://azure.microsoft.com/en-us/pricing/details/container-service/), [GKE pricing](https://cloud.google.com/kubernetes-engine/pricing)). That's because cloud providers know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
 
 ## Up next
 
