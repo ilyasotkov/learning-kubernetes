@@ -59,7 +59,9 @@ resource "google_container_cluster" "my-cluster" {
 
 ### Microsoft Azure Container Service for Kubernetes (AKS)
 
-⚠️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471). If you insist on using AKS *now*, use Azure's GUI or CLI.
+⛔️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471).
+
+If you insist on using AKS *now*, use Azure's GUI or CLI.
 
 ### Amazon Elastic Container Service for Kubernetes (Amazon EKS)
 
