@@ -30,7 +30,7 @@ An opinionated guide to administering and using Kubernetes clusters
 
 [📋 Lab Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/)
 
-- [Authentication: allow access to cluster resources](/labs/lab2/)
+- [Authentication: allow access to cluster resources](/labs/lab2/authentication.md)
 - [Authorization: limit access to cluster resources](/labs/lab2/)
 - [Persistent storage](/labs/lab2/)
 - [Networking, load balancing, and ingress management](/labs/lab2/)
