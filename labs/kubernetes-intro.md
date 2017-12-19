@@ -6,7 +6,7 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 ### Tell me about the benefits of using Kubernetes
 
-If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes happens to be the most popular way to **bring your containerized software to production**.
+If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes just happens to be the most popular way to **bring your containerized software to production**.
 
 ### Kubernetes Inputs and Outputs
 
@@ -24,7 +24,7 @@ If you already know the benefits of developing software using Docker (or contain
 
 - A highly-available, production-grade application or service running in a cloud
 
-## Compare Kubernetes to non-containerized infrastructure
+## Compare Kubernetes to hosting non-containerized software
 
 If you're wondering how using Kubernetes compares to hosting non-containerized apps and services, here are two comparison tables, for both private on-premises infrastructure and public cloud infrastructure:
 
