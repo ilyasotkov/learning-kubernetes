@@ -1,5 +1,10 @@
 # Upgrade a Kubernetes cluster
 
+First of all, why would you need to upgrade your clusters? Here are some use cases:
+
+- TODO
+- ...
+
 ## GKE
 
 Just change the cluster definition in `gke-cluster.tf` and apply the changes by running `terraform apply`.

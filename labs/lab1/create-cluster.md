@@ -4,8 +4,6 @@ Let's spin up some Kubernetes clusters! 👏
 
 ## Google Kubernetes Engine (GKE)
 
-On GKE, using Kubernetes will [cost you no more](https://cloud.google.com/kubernetes-engine/pricing) that using normal GCE instances 😌
-
 Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account

@@ -17,3 +17,7 @@ You're therefore free to use a text editor of your choice (like Atom or Vim) and
 | --- | --- |
 | 👎 Imperative  | `get`, `list`, `create`, `delete`, `init`, `add`, `rollback`, and many more |
 | 👍 Declarative  | `apply` |
+
+## Up next
+
+[Lab 1 Overview: How do I create a Kubernetes cluster and how do I maintain it?](/labs/lab1/overview.md)
