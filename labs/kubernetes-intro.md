@@ -19,17 +19,7 @@ In terms of inputs, you need two things:
 
 ♻️ Note: to make *Kubernetes API YAML* code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together.
 
-#### Kubernetes inputs
-
-- One or more container images (built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
-- A collection of Kubernetes API objects expressed in YAML (or JSON) markup, for example:
-  - Workload objects: `Deployment`, `DaemonSet`
-  - Storage objects: `PersistentVolumeClaim`
-  - Networking objects: `Service`, `Ingress`
-
-#### Kubernetes outputs
-
-- A highly-available, production-grade application or service running in a cloud
+Once you feed the YAML objects to the *Kubernetes API Server*, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
 
 ## Compare Kubernetes to hosting non-containerized software
 
