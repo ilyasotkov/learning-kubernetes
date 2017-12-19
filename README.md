@@ -15,7 +15,7 @@ An opinionated guide to administering and using Kubernetes clusters
 ### Lab 0: Background information
 
 - [What is Kubernetes? What are the benefits of using Kubernetes?](/labs/kubernetes-intro.md)
-- [Compare Kubernetes to bare-metal and raw VM deployments](/labs/kubernetes-compare.md)
+- [Compare Kubernetes to bare-metal and virtual machine deployments](/labs/kubernetes-compare.md)
 - [Goals and principles of this Kubernetes guide](/labs/goals-and-principles.md)
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
