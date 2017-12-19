@@ -12,9 +12,11 @@ An opinionated guide to administering and using Kubernetes clusters
 
 ## ⚗️ Labs
 
-[📍 What is Kubernetes? Why use it at all? How does it compare to hosting non-containerized software?](/labs/kubernetes-intro.md)
+### Lab 0: Background information
 
-[✅ Goals and principles of this Kubernetes guide](/labs/goals-and-principles.md)
+[What is Kubernetes? Why use it at all? How does it compare to hosting non-containerized software?](/labs/kubernetes-intro.md)
+
+[Goals and principles of this Kubernetes guide](/labs/goals-and-principles.md)
 
 ### Lab 1: Create and upgrade a Kubernetes cluster
 
