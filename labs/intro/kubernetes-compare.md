@@ -15,15 +15,15 @@ Keep in mind that having bare-metal data centers is extremely rare for new compa
 | Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |
 | On-premises bare-metal deployments | 🛠 On-premises data center | ❌ | ❌ |
-| On-premises virtual hardware deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ |
+| On-premises virtual machine deployments | 🛠 On-premises data center | 🛠 VMware vSphere | ❌ |
 | On-premises Kubernetes deployments | 🛠 On-premises data center | 🛠 VMware vSphere | 🛠 Docker + Kubernetes |
 
 ## Public cloud infrastructure
 
 | Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |
-| Non-containerized raw VM deployments | ☁️ Data center | ☁️ VMs | ❌ |
-| Raw cloud VM Kubernetes deployments | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
+| Deployments onto virtual machines | ☁️ Data center | ☁️ VMs | ❌ |
+| Manual Kubernetes installation onto cloud virtual machines | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
 | Hosted Kubernetes deployments on GKE, EKS, AKS | ☁️ Data center | ☁️ VMs | ☁️ Docker + Kubernetes |
 
 ## Up next
