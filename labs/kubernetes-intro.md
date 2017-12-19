@@ -2,7 +2,11 @@
 
 ## 🤔 What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular production-grade orchestrator for containerized services and applications.
+Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is the most popular way to bring containerized (dockerized) software to production at a scale.
+
+### Tell me about the benefits of using Kubernetes
+
+If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes happens to be the most popular way to **bring your containerized software to production**.
 
 ### Kubernetes Inputs and Outputs
 
@@ -16,21 +20,16 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 ♻️ To make *Kubernetes API YAML* code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together
 
-#### Kubernetes output
+#### Kubernetes outputs
 
 - A highly-available, production-grade application or service running in a cloud
 
-## 📌 Project goals
+## Compare Kubernetes to non-containerized infrastructure
 
-- Learn to set up and administer Kubernetes clusters of any scale
-- Establish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
+If you're wondering how using Kubernetes compares to hosting non-containerized apps and services, here are two comparison tables, for both private on-premises infrastructure and public cloud infrastructure:
 
-## ➗ Compare Kubernetes to non-containerized infrastructure
-
-If you're wondering how it compares to hosting non-containerized apps, here are two comparison tables, for both on-premises and public cloud infrastructure:
-
+- ☁️ means installation is automated and managed by the cloud provider
 - 🛠 means installation is your responsibility
-- ☁️ means installation is managed by the cloud provider
 - ❌ means the component is not implemented
 
 ### Private cloud infrastructure (on-premises data centers)
@@ -45,6 +44,6 @@ If you're wondering how it compares to hosting non-containerized apps, here are 
 
 | Solution | Physical Hardware | Virtual Hardware (IaaS) | Container Runtime + Orchestrator (PaaS) |
 | --- | --- | --- | --- |
-| Non-containerized raw cloud VMs | ☁️ Data center | ☁️ VMs | ❌ |
-| Raw cloud VM Kubernetes | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
-| Hosted Kubernetes: GKE, EKS, AKS | ☁️ Data center | ☁️ VMs | ☁️ Docker + Kubernetes |
+| Non-containerized raw VM deployments | ☁️ Data center | ☁️ VMs | ❌ |
+| Raw cloud VM Kubernetes deployments | ☁️ Data center | ☁️ VMs | 🛠 Docker + Kubernetes (via kops or Ansible) |
+| Hosted Kubernetes deployments on GKE, EKS, AKS | ☁️ Data center | ☁️ VMs | ☁️ Docker + Kubernetes |
