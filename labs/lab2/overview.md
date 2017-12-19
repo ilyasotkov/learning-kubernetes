@@ -10,7 +10,7 @@ Second, we need to make sure that teammates are not going to destroy or otherwis
 
 Third, we'll discover how storage works in Kubernetes and how you can add new storage sources for the cluster to use. [Persistent storage](/labs/lab2/)
 
-Fourth,
+Fourth, we'll go deploy an ingress controller and kube-lego to securely proxy for publicly available services. [Networking, load balancing, and ingress management](/labs/lab2/)
 
 ## Up next
 

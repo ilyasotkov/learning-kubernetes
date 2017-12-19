@@ -28,7 +28,7 @@ An opinionated guide to administering and using Kubernetes clusters
 
 ### Lab 2: Get your cluster ready for production
 
-[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/)
+[📋 Lab Overview: How do I turn a bare Kubernetes installation into a production-ready cluster?](/labs/lab2/overview.md)
 
 - [Authentication: allow access to cluster resources](/labs/lab2/authentication.md)
 - [Authorization: limit access to cluster resources](/labs/lab2/)
