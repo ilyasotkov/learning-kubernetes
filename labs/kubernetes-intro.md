@@ -10,6 +10,15 @@ If you already know the benefits of developing software using Docker (or contain
 
 ### Kubernetes Inputs and Outputs
 
+If Kubernetes seems complicated, try looking at the big picture: the inputs you are expected to have and the outputs are getting in return.
+
+In terms of inputs, you need two things:
+
+1. Have a *generic* (suitable for any environment and any cluster) container image.
+2. Have a package of *Kubernetes API YAML* objects. The package will reference the generic container image, configure it for your specific environment, and specify exacly *how* you want to run it in the cloud.
+
+♻️ Note: to make *Kubernetes API YAML* code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together.
+
 #### Kubernetes inputs
 
 - One or more container images (built from Dockerfiles) stored in some private or public container image registry, like [hub.docker.com](https://hub.docker.com/), [gcr.io](https://cloud.google.com/container-registry/), [quay.io](https://quay.io/)
@@ -17,8 +26,6 @@ If you already know the benefits of developing software using Docker (or contain
   - Workload objects: `Deployment`, `DaemonSet`
   - Storage objects: `PersistentVolumeClaim`
   - Networking objects: `Service`, `Ingress`
-
-♻️ To make *Kubernetes API YAML* code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together
 
 #### Kubernetes outputs
 
