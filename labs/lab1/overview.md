@@ -4,7 +4,16 @@ In this first lab, we'll go from absolute zero to having a bare Kubernetes insta
 
 ## Lab Overview
 
-TODO
+In this lab, we will use [Terraform](/) to declaratively spin up a Kubernetes cluster. I want this guide to be as simple as possible, so we're gonna use a *hosted* Kubernetes solution. "Hosted" means that we'll let a cloud provider install and preconfigure the cluster for us instead of doing that manually.
+
+You might now be thinking "Aren't we cheating here? And it's gonna be more expensive, isn't it?"
+
+First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup *is really complicated*):
+
+- [Setup section of the Kubernetes Docs](/)
+- [Kubernetes the Hard Way by Kelsey Hightower](/) ([Ansible](/))
+
+Secondly, hosted Kubernetes will cost you no more than hosting normal compute instances, because cloud providers see potential in popularizing Kubernetes and making it *FREE* is the best marketing strategy there is. Amazon, Google, and Microsoft know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
 
 ## Up next
 
