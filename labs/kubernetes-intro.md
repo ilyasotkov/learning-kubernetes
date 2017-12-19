@@ -2,7 +2,7 @@
 
 ## 🤔 What is Kubernetes?
 
-Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is the most popular way to bring containerized (dockerized) software to production at a scale.
+Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at a scale.
 
 ### Tell me about the benefits of using Kubernetes
 
