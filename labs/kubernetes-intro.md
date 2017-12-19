@@ -4,7 +4,7 @@
 
 Kubernetes is an open-source platform for consuming cloud **compute**, **storage**, and **networking resources**. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at a scale.
 
-### Tell me about the benefits of using Kubernetes
+### What are the benefits of using Kubernetes?
 
 If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes just happens to be the most popular way to **bring your containerized software to production**.
 
