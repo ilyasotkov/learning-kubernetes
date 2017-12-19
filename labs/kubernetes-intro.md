@@ -8,7 +8,7 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes just happens to be the most popular way to **bring your containerized software to production**.
 
-### Kubernetes Inputs and Outputs
+### Kubernetes inputs and outputs
 
 If Kubernetes seems complicated, try looking at the big picture: the inputs you are expected to have and the outputs are getting in return.
 
