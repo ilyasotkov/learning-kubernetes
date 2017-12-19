@@ -62,7 +62,7 @@ resource "google_container_cluster" "my-cluster" {
 
 If you insist on using AKS *now*, use Azure's GUI or CLI.
 
-## Amazon Elastic Container Service for Kubernetes (Amazon EKS)
+## Amazon Elastic Container Service for Kubernetes (EKS)
 
 ⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
 

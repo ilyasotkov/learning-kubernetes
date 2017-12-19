@@ -6,7 +6,7 @@ Kubernetes is an open-source platform for consuming cloud **compute**, **storage
 
 ### What are the benefits of using Kubernetes?
 
-If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes just happens to be the most popular way to **bring your containerized software to production**.
+If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes just happens to be the most popular way to bring your containerized software to production at a scale.
 
 ### Kubernetes inputs and outputs
 
@@ -17,7 +17,7 @@ In terms of inputs, you need two things:
 1. Have a *generic* (suitable for any environment and any cluster) container image.
 2. Have a package of *Kubernetes API YAML* objects. The package will reference the generic container image, configure it for your specific environment, and specify exacly *how* you want to run it in the cloud.
 
-**Note:** to make *Kubernetes API YAML* code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together.
+**Note:** to make Kubernetes API YAML code dry and reusable, we'll use the [Helm package manager](https://helm.sh) for templating and packaging everything together.
 
 Once you feed the YAML objects to the *Kubernetes API Server*, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
 

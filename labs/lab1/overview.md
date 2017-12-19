@@ -8,7 +8,7 @@ In this lab, we will use [Terraform](/) to declaratively spin up a Kubernetes cl
 
 You might now be thinking "Aren't we cheating here? And it's gonna be more expensive, isn't it?"
 
-First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup *is really complicated*):
+First of all, I wouldn't call automation cheating. If you want to get familiar with how Kubernetes really works, go through these guides (be prepared to spend at least a couple of weeks on these, Kubernetes setup is pretty complicated):
 
 - [Setup section of the Kubernetes Docs](https://kubernetes.io/docs/setup/)
 - [Kubernetes the Hard Way by Kelsey Hightower](https://github.com/kelseyhightower/kubernetes-the-hard-way)
