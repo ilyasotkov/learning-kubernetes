@@ -26,7 +26,7 @@ This guide strives to bring operational simplicity to Kubernetes by using a stan
 
 1. All clusters must be created and destroyed using one command (at most)! Currently, that would be `terraform apply` and `terraform destroy` coupled with using hosted Kubernetes solutions from large and established cloud providers. Ansible is a possible option as well (on top of Terraform).
 
-2. We ditch the use of `kubectl` completely. We use [Helm](https://helm.sh/) exclusively to talk to the Kubernetes API. [We're also considering a missing tool to declaratively manage Helm releases!](https://github.com/kubernetes/helm/issues/3089)
+2. We ditch the use of `kubectl` completely. We use [Helm](https://helm.sh/) exclusively to talk to the Kubernetes API. [We're also looking a missing tool to declaratively manage Helm releases!](https://github.com/kubernetes/helm/issues/3089) Possible options: [terraform-helm-provider](/), [helm-crd](/), [Helmfile](/)
 
 ## Up next
 
