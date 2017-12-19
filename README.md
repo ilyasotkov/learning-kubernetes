@@ -14,7 +14,7 @@ An opinionated guide to administering and using Kubernetes clusters
 
 ### Lab 0: Background information
 
-[What is Kubernetes? Why use it at all? How does it compare to hosting non-containerized software?](/labs/kubernetes-intro.md)
+[What is Kubernetes? What are the benefits of using Kubernetes? How does it compare to hosting non-containerized software?](/labs/kubernetes-intro.md)
 
 [Goals and principles of this Kubernetes guide](/labs/goals-and-principles.md)
 
