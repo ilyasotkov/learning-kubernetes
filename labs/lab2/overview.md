@@ -1,8 +1,8 @@
-# Lab 2 overview: How do I turn a bare Kubernetes installation into a production-ready cluster?
+# Lab 2: How do I turn a bare Kubernetes installation into a production-ready cluster?
 
 In this second lab, we'll turn a bare Kubernetes installation into a production-ready cluster.
 
-## Lab 2 overview
+## Overview
 
 First of all, how do we make sure that each of our teammates gets the access to cluster resources in a secure way? [Authentication: allow access to cluster resources](/labs/lab2/authentication.md)
 
