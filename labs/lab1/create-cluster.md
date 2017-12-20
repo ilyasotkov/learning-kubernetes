@@ -1,5 +1,9 @@
 # Create a Kubernetes cluster
 
+- [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
+- [Microsoft Azure Container Service for Kubernetes (AKS)](#microsoft-azure-container-service-for-kubernetes-aks)
+- [Amazon Elastic Container Service for Kubernetes (EKS)](#amazon-elastic-container-service-for-kubernetes-eks)
+
 As I want this guide to be as simple as possible, we're going to use a *hosted* Kubernetes solution. "Hosted" means that we'll let a cloud provider install and preconfigure the cluster for us instead of doing that manually. Hosted Kubernetes clusters are easy to create and manage. The "big three" of public cloud providers — Amazon, Google, Microsoft — have all announced a hosted (managed) Kubernetes platform, with Google Kubernetes Engine being the most mature solution as of late December 2017.
 
 You might now be thinking "Isn't it more expensive than using normal virtual servers?" The answer is that hosted Kubernetes will cost you no more than normal compute instances ([at AKS](https://azure.microsoft.com/en-us/pricing/details/container-service/), [at GKE](https://cloud.google.com/kubernetes-engine/pricing)). That's because cloud providers know that their long-term competitive advantage in cloud computing is state-of-the-art data centers, not proprietary software.
