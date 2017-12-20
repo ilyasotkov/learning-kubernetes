@@ -1,11 +1,15 @@
 # Upgrade a Kubernetes cluster
 
+- [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
+- [Microsoft Azure Container Service for Kubernetes (AKS)](#microsoft-azure-container-service-for-kubernetes-aks)
+- [Amazon Elastic Container Service for Kubernetes (EKS)](#amazon-elastic-container-service-for-kubernetes-eks)
+
 First of all, why would you need to upgrade your clusters? Here are some use cases:
 
 - TODO
 - ...
 
-## GKE
+## Google Kubernetes Engine (GKE)
 
 Just change the cluster definition in `gke-cluster.tf` and apply the changes by running `terraform apply`.
 
@@ -19,13 +23,13 @@ Just change the cluster definition in `gke-cluster.tf` and apply the changes by 
 - Autoscaling doesn't scale back if resources are abundant? Need to test.
 - `terraform destroy` will not delete an Google Cloud LoadBalancer created when we deploy `nginx-ingress`. Need to do it manually.
 
-## AKS
+## Microsoft Azure Container Service for Kubernetes (AKS)
 
 ⛔️ AKS support for Azure Terraform provider [has not been added yet](https://github.com/terraform-providers/terraform-provider-azurerm/issues/471).
 
 If you insist on using AKS *now*, use Azure's GUI or CLI.
 
-## EKS
+## Amazon Elastic Container Service for Kubernetes (EKS)
 
 ⛔️ As of late December 2017, [EKS](https://aws.amazon.com/eks/) has not been released to the public yet.
 
