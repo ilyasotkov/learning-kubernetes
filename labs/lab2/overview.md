@@ -8,7 +8,7 @@ In this second lab, we'll turn a bare Kubernetes installation into a production-
 
 First of all, how do we make sure that each of our teammates gets the access to cluster resources in a secure way?
 
-### 👤 [Authorization: limit access to cluster resources](/labs/lab2/)
+### 👤 [Authorization: manage roles and users](/labs/lab2/authorization.md)
 
 Second, how do we prevent teammates from messing with each other's work (on purpose or by accident)?
 
