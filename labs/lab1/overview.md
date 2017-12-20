@@ -4,15 +4,15 @@ In this first lab, we'll go from absolute zero to having a bare Kubernetes insta
 
 ## Overview
 
-### [Create a Kubernetes cluster](/labs/lab1/create-cluster.md)
+### 📝 [Create a Kubernetes cluster](/labs/lab1/create-cluster.md)
 
 In the first part of the lab, we'll use [Terraform](/) as a tool for declaratively creating a Kubernetes cluster.
 
-### [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-cluster.md)
+### ✏️ [Upgrade a Kubernetes cluster](/labs/lab1/upgrade-cluster.md)
 
 In the second part of the lab, we'll review situations in which you will want to upgrade your cluster, and how to go about it.
 
-### [Destroy a Kubernetes cluster](/labs/lab1/destroy-cluster.md)
+### 🚮 [Destroy a Kubernetes cluster](/labs/lab1/destroy-cluster.md)
 
 In the third part of the lab, we'll tell you how to destroy your cluster (useful for testing to avoid wasting money).
 
