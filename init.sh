@@ -10,8 +10,7 @@ gcloud container clusters get-credentials \
         && helm init --upgrade --service-account tiller \
         && echo "Waiting 15 seconds for Tiller pod to start up..." \
         && sleep 15 \
-        && helm install \
-        charts/nginx-ingress \
+        && helm install charts/nginx-ingress \
         && helm install charts/kube-lego
 
 # nginx-ingress will create a LoadBalancer service,
