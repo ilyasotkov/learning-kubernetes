@@ -28,4 +28,4 @@ Keep in mind that having bare-metal data centers is extremely rare for new compa
 
 ## Up next
 
-[Goals and principles of this Kubernetes guide](/labs/goals-and-principles.md)
+[Goals and principles of this Kubernetes guide](/labs/intro/goals-and-principles.md)
