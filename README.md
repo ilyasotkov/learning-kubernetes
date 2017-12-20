@@ -37,7 +37,7 @@ An opinionated guide to administering and using Kubernetes clusters
 - [Monitoring and alerting](/labs/lab2/)
 - [Continous Integration (CI) tools](/labs/lab2/)
 
-### Lab 3: Use a Kubernetes cluster
+### Lab 3: Deploy software onto your cluster
 
 [📋 Lab Overview: What's the best way to consume Kubernetes cluster resources?](/labs/lab3/)
 
