@@ -2,6 +2,10 @@
 
 ## Authentication on Google Kubernetes Engine (GKE)
 
+<https://cloud.google.com/kubernetes-engine/docs/how-to/iam-integration>
+
+<https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control>
+
 First, let's review how GKE integrates with Kubernetes for authentication.
 
 Google Cloud Platform (GCP) is itself is a platform (IaaS) that manages users and roles (access permissions). GCP IAM (Identity and Access Management) integrates with Kubernetes token authentication mechanism, which results in this workflow:
@@ -10,7 +14,7 @@ Google Cloud Platform (GCP) is itself is a platform (IaaS) that manages users an
 - You get a personal token for that account
 - You then use the token to talk to the cluster `kube-apiserver`
 
-In other words, Google Accounts are used access the cluster.
+In other words, Google Accounts are used to access the cluster.
 
 ### Create and activate a service account on GCP
 
