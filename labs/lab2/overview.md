@@ -10,7 +10,9 @@ First of all, how do we make sure that each of our teammates gets the access to 
 
 ### [Authorization: limit access to cluster resources](/labs/lab2/)
 
-Second, how do we make sure that our teammates are not going to destroy or otherwise mess with each other's work (on purpose or by accident)?
+Second, how do we prevent teammates from messing with each other's work (on purpose or by accident)?
+
+<br>
 
 ### [Persistent storage](/labs/lab2/)
 
@@ -20,9 +22,13 @@ Third, we'll discover how storage works in Kubernetes and how you can add new st
 
 Fourth, we'll deploy an ingress controller (`ingress-nginx`) and TLS certificate controller (`kube-lego`) to have a secure proxy (`Ingress` objects) for publicly available applications.
 
+<br>
+
 ### [Monitoring and alerting](/labs/lab2/)
 
 Fifth, we'll set up a system for monitoring cluster state and making sure we're alerted if anything bad happens.
+
+<br>
 
 ### [Continous Integration (CI) tools](/labs/lab2/)
 
