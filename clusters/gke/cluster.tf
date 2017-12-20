@@ -27,7 +27,7 @@ resource "google_container_cluster" "my-cluster" {
   cluster_ipv4_cidr  = "10.20.0.0/14"
   node_version       = "1.8.4-gke.0"
   min_master_version = "1.8.4-gke.0"
-  enable_legacy_abac = "true"
+  enable_legacy_abac = "false"
   subnetwork         = "default"
 
   node_config {
