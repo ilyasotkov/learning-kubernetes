@@ -13,6 +13,8 @@ Let's spin up a Kubernetes cluster now! 👏
 
 ## Google Kubernetes Engine (GKE)
 
+Advantages of using GKE for Kubernetes: <https://medium.com/google-cloud/why-k8s-on-gke-a644d2d611c1>
+
 Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
