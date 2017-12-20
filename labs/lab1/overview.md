@@ -4,7 +4,7 @@ In this first lab, we'll go from absolute zero to having a bare Kubernetes insta
 
 ## Lab 1 overview
 
-In the first part of the lab, we'll use [Terraform](/) as a tool for declaratively interacting with a cloud provider.
+In the first part of the lab, we'll use [Terraform](/) as a tool for declaratively creating a Kubernetes cluster.
 
 In the second part of the lab, we'll review situations in which you will want to upgrade your cluster, and how to go about it.
 
