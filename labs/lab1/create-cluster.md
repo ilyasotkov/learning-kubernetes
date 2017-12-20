@@ -9,7 +9,7 @@ If you want to get familiar with how Kubernetes really works underneath the cove
 - [\[Kubernetes Docs\] Setting up a Kubernetes cluster](https://kubernetes.io/docs/setup/)
 - [\[Kelsey Hightower\] Kubernetes the Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way)
 
-Let's spin up some Kubernetes clusters! 👏
+Let's spin up a Kubernetes cluster now! 👏
 
 ## Google Kubernetes Engine (GKE)
 
@@ -17,8 +17,8 @@ Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
 2. Add credit card info to [Google Cloud Platform](/) (and get free $300 to spend on the platform)
-3. Set up `gcloud` CLI locally
-4. Create cluster by adding `gke-cluster.tf` file and running `terraform init` and `terraform apply`
+3. Download [Google Cloud SDK](https://cloud.google.com/sdk/docs/), add binaries to your `$PATH`, log in into your GCP account
+4. Create cluster by adding `gke-cluster.tf` file and running `terraform init` then `terraform apply`:
 
 ```tf
 # gke-cluster.tf
