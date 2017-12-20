@@ -14,11 +14,20 @@ Google Cloud Platform (GCP) is itself is a platform (IaaS) that manages users an
 - You get a personal token for that account
 - You then use the token to talk to the cluster `kube-apiserver`
 
-In other words, Google Accounts are used to access the cluster.
+In other words, Google identities are used to access the cluster. This provides revocable cluster access and allows users to be given different levels of access (for example, read-only access to cluster resources).
+
+Since we used Terraform to create the cluster, we can also manage creating user and service accounts for both GCP and Kubernetes clusters.
 
 ### Create and activate a service account on GCP
 
-TODO
+```tf
+# copypasta
+resource "google_project_iam_member" "project" {
+  project = "your-project-id"
+  role    = "roles/editor"
+  member  = "user:jane@example.com"
+}
+```
 
 ## Up next
 
