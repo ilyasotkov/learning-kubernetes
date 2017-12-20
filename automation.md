@@ -6,7 +6,6 @@ We're likely going to use ansible to make every interaction automatic. Here we c
 - Download cloud provider SDK (Google Cloud SDK)
 - Login into cloud provider account locally (version control + encrypted secrets)
 - Create cluster
-- Add user accounts to cluster
 - Add cloud roles and users (for GCP)
 - Get credentials for cluster
 - Add namespaces (virtual clusters)
