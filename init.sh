@@ -1,11 +1,18 @@
 #! /bin/bash
 
-gcloud container clusters get-credentials my-cluster --zone europe-west1-d --project ethereal-argon-186217 && \
-helm init
-helm init --upgrade
-echo "Waiting 15 seconds for Tiller pod to start up..."
-sleep 15 # Give time for Tiller pod to start
-helm install charts/nginx-ingress && helm install charts/kube-lego
+gcloud container clusters get-credentials \
+        my-cluster \
+        --zone europe-west1-d \
+        --project ethereal-argon-186217 \
+        && kubectl -n kube-system create sa tiller \
+        && kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller \
+        && helm init --service-account tiller \
+        && helm init --upgrade --service-account tiller \
+        && echo "Waiting 15 seconds for Tiller pod to start up..." \
+        && sleep 15 \
+        && helm install \
+        charts/nginx-ingress \
+        && helm install charts/kube-lego
 
 # nginx-ingress will create a LoadBalancer service,
 # which will give us an external IP address
