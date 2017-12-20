@@ -2,7 +2,7 @@
 
 ## GKE
 
-You can tear down a cluster by running `terraform destroy`.
+✅ You can tear down a cluster by running `terraform destroy`.
 
 ### ⚠️ Terraform GKE outstanding issues
 

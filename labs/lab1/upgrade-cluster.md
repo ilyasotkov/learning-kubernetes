@@ -11,7 +11,7 @@ First of all, why would you need to upgrade your clusters? Here are some use cas
 
 ## Google Kubernetes Engine (GKE)
 
-Just change the cluster definition in `gke-cluster.tf` and apply the changes by running `terraform apply`.
+✅ Just change the cluster definition in `gke-cluster.tf` and apply the changes by running `terraform apply`.
 
 **TODO:** application through a CI pipeline on git push
 

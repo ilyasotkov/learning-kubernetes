@@ -19,7 +19,7 @@ Let's spin up a Kubernetes cluster now! 👏
 
 Advantages of using GKE for Kubernetes: <https://medium.com/google-cloud/why-k8s-on-gke-a644d2d611c1>
 
-Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
+✅ Here are the steps to go from zero to a bare Kubernetes cluster on GKE:
 
 1. Create a Google Account
 2. Add credit card info to [Google Cloud Platform](/) (and get free $300 to spend on the platform)
