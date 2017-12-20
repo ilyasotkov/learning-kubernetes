@@ -1,8 +1,8 @@
 # Create a Kubernetes cluster
 
-- [What it takes to create a Kubernetes cluter](#what-it-takes-to-create-a-kubernetes-cluster)
-  - [Hosted Kubernetes](#hosted-kubernetes)
-  - [Manual Kubernetes cluster installation](#manual-kubernetes-cluster-installation)
+- [What it takes to create a Kubernetes cluster](#what-it-takes-to-create-a-kubernetes-cluster)
+  - [What is hosted Kubernetes?](#hosted-kubernetes)
+  - [Manual Kubernetes installation and cluster creation](#manual-kubernetes-cluster-installation)
 - [Google Kubernetes Engine (GKE)](#google-kubernetes-engine-gke)
 - [Microsoft Azure Container Service for Kubernetes (AKS)](#microsoft-azure-container-service-for-kubernetes-aks)
 - [Amazon Elastic Container Service for Kubernetes (EKS)](#amazon-elastic-container-service-for-kubernetes-eks)
