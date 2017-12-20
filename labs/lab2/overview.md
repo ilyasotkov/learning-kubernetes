@@ -31,3 +31,7 @@ Fifth, we'll set up a system for monitoring cluster state and making sure we're 
 ### [Continous Integration (CI) tools](/labs/lab2/)
 
 Sixth, we'll provide application developers with an ability to deploy their application automatically via a CI (continous integration) pipeline.
+
+## Up next
+
+[Authentication: allow access to cluster resources](/labs/lab2/authentication.md)
