@@ -1,3 +1,5 @@
 # Authentication: allow access to cluster resources
 
-TODO
+## Authentication on Google Kubernetes Engine (GKE)
+
+First, let's review how GKE integrates with Kubernetes for authentication.
