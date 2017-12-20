@@ -18,16 +18,6 @@ You're therefore free to use a text editor of your choice (like Atom or Vim) and
 | 👎 Imperative  | `get`, `list`, `create`, `delete`, `init`, `add`, `rollback`, and many more |
 | 👍 Declarative  | `apply` |
 
-## Simple and structured, opinionated
-
-Kubernetes is fairly complex as is, yet Kubernetes official documentation is quite outdated considering how much the interactions with Kubernetes API server changed with the emergence of a declarative [`kubectl apply`](/).
-
-This guide strives to bring operational simplicity to Kubernetes by using a standard git-based worflow (git-flow or GitHub Flow) for interacting with both cloud providers and individual Kubernetes clusters:
-
-1. All clusters must be created and destroyed using one command (at most)! Currently, that would be `terraform apply` and `terraform destroy` coupled with using hosted Kubernetes solutions from large and established cloud providers. Ansible is a possible option as well (on top of Terraform).
-
-2. We ditch the use of `kubectl` completely. We use [Helm](https://helm.sh/) exclusively to talk to the Kubernetes API. [We're also looking a missing tool to declaratively manage Helm releases!](https://github.com/kubernetes/helm/issues/3089) Possible options: [terraform-helm-provider](/), [helm-crd](/), [Helmfile](/)
-
 ## Up next
 
 [Lab 1 Overview: How do I create a Kubernetes cluster and how do I maintain it?](/labs/lab1/overview.md)
