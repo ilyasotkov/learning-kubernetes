@@ -5,10 +5,8 @@
 We can use Terraform to declaratively manage GKE clusters. Terraform will use your local `gcloud` configuration to access the Google Cloud.
 
 ```sh
+terraform plan
 terraform apply
-```
-
-```sh
 terraform destroy
 ```
 
