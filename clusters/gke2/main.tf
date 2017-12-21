@@ -1,5 +1,3 @@
-# TBD
-
 provider "google" {
   project = "ethereal-argon-186217"
   region  = "europe-west1-d"
@@ -7,6 +5,6 @@ provider "google" {
 
 module "gke_cluster" {
   source = "../modules/gke-cluster"
-
-  # TBD
+  cluster_name = "my-k8s-cluster"
+  nodepool_name = "my-k8s-np"
 }
