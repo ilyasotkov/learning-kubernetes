@@ -5,7 +5,7 @@ We're likely going to use Ansible to make every interaction automatic. Here we c
 | Tools | Task |
 | --- | --- |
 | GCP Console (GUI) | Create cloud provider (GCP) account, enable billing |
-| CLI, Ansible, Terraform | Download cloud provider SDK (Google Cloud SDK), add binary path to `$PATH` |
+| CLI, Ansible, Terraform? | Download cloud provider SDK (Google Cloud SDK), add binary path to `$PATH` |
 | Terraform | Login into cloud provider account locally (version control + encrypted secrets) |
 | Terraform | Create cluster |
 | Terraform | Add cloud roles and users (for GCP) |

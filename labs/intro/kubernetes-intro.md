@@ -2,7 +2,7 @@
 
 ## What is Kubernetes? 🤔
 
-Kubernetes is *a platform for consuming cloud compute, storage, and networking resources*. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at scale.
+Kubernetes is a platform for consuming cloud compute, storage, and networking resources. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at scale.
 
 ### What are the benefits of using Kubernetes?
 
@@ -15,12 +15,11 @@ If Kubernetes seems complicated, try looking at the big picture: the inputs you 
 
 In terms of inputs, you need two things:
 
-1. One or more generic (suitable for any environment on any cluster) **container images** for your service or application, located in a private or public container image registry (e.g. [gcr.io](https://gcr.io/), [quay.io](/), [hub.docker.com](/))
-2. One or more YAML files with Kubernetes API object specs. There's only a handful of top-level Kubernetes API objects which you'd be authoring yourself in a YAML file, each belongs to one of the three *cloud resource* categories:
-
-- Compute: `Deployment`, `DaemonSet`, `StatefulSet`, `Job`, `CronJob`
-- Storage: `PersistentVolumeClaim`
-- Networking: `Service`, `Ingress`
+1. One or more generic (suitable for any environment on any cluster) **container images** for your service or application, located in a private or public container image registry (e.g. [gcr.io](https://gcr.io/), [quay.io](/), [hub.docker.com](/)).
+2. One or more **YAML files** with Kubernetes API object specs. There's only a handful of top-level Kubernetes API objects which you'd be authoring yourself, each belongs to one of the three *cloud resource* categories:
+  - Compute: `Deployment`, `DaemonSet`, `StatefulSet`, `Job`, `CronJob`
+  - Storage: `PersistentVolumeClaim`
+  - Networking: `Service`, `Ingress`
 
 Once you send that YAML package to the Kubernetes API server, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
 
