@@ -6,6 +6,9 @@ In this section we will deploy several Kubernetes clusters. The goal is to creat
 
 ## Features
 
+- [ ] Add a minimal working example for all available hosted Kubernetes solutions
+- [ ] Add a full-featured example for all available hosted Kubernetes solutions
+
 ## Directory structure
 
 ```
