@@ -4,16 +4,16 @@
 
 Kubernetes is a platform for consuming cloud compute, storage, and networking resources. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at scale.
 
-### What are the benefits of using Kubernetes?
+## What are the benefits of using Kubernetes?
 
 If you already know the benefits of developing software using Docker (or containers in general), then *there you got it*. Kubernetes is just a really good a way to deploy that software to a cloud.
 
-### Kubernetes inputs and outputs
+## Kubernetes inputs and outputs
 
 If Kubernetes seems complicated, try looking at the big picture: the inputs you are expected to give to the **Kubernetes API server** (`kube-apiserver
 `) and the outputs you are getting in return.
 
-#### Inputs
+### Inputs
 
 In terms of inputs, you need two things:
 
@@ -31,7 +31,7 @@ In terms of inputs, you need two things:
     | `Job` | | |
     | `CronJob` | | |
 
-#### Outputs
+### Outputs
 
 Once you send that YAML package to the Kubernetes API server, you should expect to have highly-available, production-grade application or service running in your cloud. It's that simple!
 
