@@ -6,7 +6,7 @@
 ![Uses Helm](https://img.shields.io/badge/uses-helm-10a3eb.svg)
 ![Uses Terraform](https://img.shields.io/badge/uses-terraform-5956e3.svg)
 
-An opinionated guide to administering and using Kubernetes clusters
+A guide to administering and using Kubernetes clusters declaratively
 
 ⚠️ This is a work in progress
 
