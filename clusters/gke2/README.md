@@ -1,5 +1,7 @@
 # An advanced GKE cluster using Terraform
 
+## Introduction and features
+
 This cluster tries to use *everything* both Terraform and Terraform GCP provider have to offer.
 
 Possible features:
@@ -10,3 +12,22 @@ Possible features:
 - [ ] Output useful variables
 - [ ] Handle IAM
 - [ ] Handle DNS
+
+## Directory structure
+
+TODO
+
+```
+.
+├── README.md
+├── live
+│   └── prod
+│       └── main.tf
+└── modules
+    └── gke-cluster
+        ├── main.tf
+        ├── outputs.tf
+        └── vars.tf
+
+4 directories, 5 files
+```
