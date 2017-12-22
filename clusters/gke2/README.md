@@ -8,7 +8,7 @@ This cluster tries to use *everything* both Terraform and Terraform GCP provider
 
 - [x] Use Terraform modules
 - [ ] Use versioned Terraform modules
-- [ ] Use Terragrunt (remote state + state locking)
+- [ ] Use Terraform remote state with encryption
 - [ ] Automate most of the `automation.md` tasks
 - [ ] Output useful variables
 - [ ] Handle IAM
