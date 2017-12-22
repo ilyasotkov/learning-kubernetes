@@ -3,8 +3,8 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Goals and principles of this guide](#goals-and-principles-of-this-guide)
-	- [📌 Goals](#-goals)
-	- [♻️ Everything as code](#-everything-as-code)
+	- [Goals](#goals)
+	- [Everything as code](#everything-as-code)
 	- [The future of Kubernetes in DevOps (we're not there yet)](#the-future-of-kubernetes-in-devops-were-not-there-yet)
 	- [Simple worflow](#simple-worflow)
 	- [Responsibilities](#responsibilities)
@@ -16,12 +16,12 @@
 
 <!-- /TOC -->
 
-## 📌 Goals
+## Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
 - Establish a smooth *declarative* workflow for deploying containerized applications and services to Kubernetes clusters
 
-## ♻️ Everything as code
+## Everything as code
 
 In our labs, we keep our use of CLIs and GUIs to a minimum, instead looking to express the desired state of any external resources **as code** that can be committed to a git repository and managed with a familiar developer workflow, like [git-flow](https://github.com/nvie/gitflow/) or [GitHub Flow](https://guides.github.com/introduction/flow/).
 

@@ -1,5 +1,14 @@
 # Compare Kubernetes to hosting non-containerized software
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Compare Kubernetes to hosting non-containerized software](#compare-kubernetes-to-hosting-non-containerized-software)
+	- [Private cloud infrastructure (on-premises data centers)](#private-cloud-infrastructure-on-premises-data-centers)
+	- [Public cloud infrastructure](#public-cloud-infrastructure)
+	- [Up next](#up-next)
+
+<!-- /TOC -->
+
 If you're wondering how using Kubernetes compares to deploying software directly onto bare metal and virtual machines, following are two comparison tables, for private on-premises infrastructure and public cloud infrastructure:
 
 - ☁️ means installation is automated and managed by the cloud provider
