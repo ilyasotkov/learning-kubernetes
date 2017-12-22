@@ -1,5 +1,21 @@
 # Goals and principles of this guide
 
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Goals and principles of this guide](#goals-and-principles-of-this-guide)
+	- [📌 Goals](#-goals)
+	- [♻️ Everything as code](#-everything-as-code)
+	- [The future of Kubernetes in DevOps (we're not there yet)](#the-future-of-kubernetes-in-devops-were-not-there-yet)
+	- [Simple worflow](#simple-worflow)
+	- [Responsibilities](#responsibilities)
+		- [Cloud provider responsiblities](#cloud-provider-responsiblities)
+		- [Our responsiblities](#our-responsiblities)
+	- [Humans deal with logical abstractions, not technical constraints](#humans-deal-with-logical-abstractions-not-technical-constraints)
+		- [Cluster updates](#cluster-updates)
+	- [Up next](#up-next)
+
+<!-- /TOC -->
+
 ## 📌 Goals
 
 - Learn to set up and administer Kubernetes clusters of any scale
