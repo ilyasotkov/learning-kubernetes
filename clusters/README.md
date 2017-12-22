@@ -14,11 +14,11 @@ In this section we will deploy several Kubernetes clusters. The goal is to creat
 ```
 .
 ├── aks
-│   ├── cluster.tf
+│   └── cluster.tf
 ├── eks
-│   ├── cluster.tf
+│   └── cluster.tf
 ├── gke
-│   ├── cluster.tf
+│   └── cluster.tf
 └── gke2
     ├── live
     │   └── prod
