@@ -1,11 +1,38 @@
-# Kubernetes Cluster Setup
+# Kubernetes clusters (infrastructure)
 
-- <https://kubernetes.io/docs/setup/>
-- <https://kubernetes.io/docs/concepts/cluster-administration/cluster-administration-overview/>
-
-## ✊ Goals
+## Introduction
 
 In this section we will deploy several Kubernetes clusters. The goal is to create a production-grade, easy-to-use, easy-to-monitor deployment system, and deploy a few "Hello, world!" apps onto the cluster.
+
+## Features
+
+## Directory structure
+
+```
+.
+├── aks
+│   ├── cluster.tf
+├── eks
+│   ├── cluster.tf
+├── gke
+│   ├── cluster.tf
+└── gke2
+    ├── live
+    │   └── prod
+    │       └── main.tf
+    └── modules
+        └── gke-cluster
+            ├── main.tf
+            ├── outputs.tf
+            └── vars.tf
+```
+
+| Directory | Contents description | Ready for use |
+| --- | --- | --- |
+| `aks` | A minimal AKS example using Terraform | ❌ |
+| `eks` | A minimal EKS example using Terraform | ❌ |
+| `gke` | A minimal GKE example using Terraform | ✅ |
+| `gke2` | A full-featured GKE example using Terraform | ❌ |
 
 ## Comparing cloud providers
 
@@ -24,37 +51,3 @@ After a couple of days of fiddling with GKE, AWS, Azure ACS (and getting a glanc
 **NEW!** AMAZON has recently has announced a native Kubernetes solution - **EKS** (Elastic Container Service for Kubernetes): <https://aws.amazon.com/eks/>
 
 `kops` has been the "official" way to host a Kubernetes cluster on AWS, and <https://engineering.bitnami.com/articles/how-bitnami-uses-kops-to-manage-kubernetes-clusters-on-aws.html> offers a glance into a smooth workflow for hosting a Kubernetes cluster on AWS.
-
-## The plan
-
-1. Declaratively (via 1 command) create a cluster and deploy all supporting tools (Ingress Controller + Lego + Docker image registry + Jenkins / Drone).
-2. Deploy a hello-world app.
-
-## Ideal case to strive for
-
-### Cloud providers
-
-A cloud provider of our choice manages all hardware (data centers). It also monitors compute / memory / storage resource pressure and auto-scales VMs when needed. It's designed for ~100% availability and ~100% durability.
-
-On our part (as a user of a cloud provider), we manage a cluster git repository and handle all required changes to the cluster state by making changes to cluster files in the repository. Changes are then handled via a CI pipeline (git-based workflow, either *git-flow* or *GitHub Flow*):
-
-1. Commit changes manually via `git commit` or a GUI.
-
-The CI pipeline will:
-
-- Run all tests / checks to make sure everything works and is ready to be deployed
-- Deploy into production if checks are successful
-
-### Goals
-
-A cluster should define a **logical boundary** and not be constrained by any technical requirement. It's fine for clusters to be large (e.g. a company cluster).
-
-Every cluster has its codebase. A company should always have a **staging cluster** to allow DevOps engineers to test cluster configuration.
-
-### Cluster updates
-
-Updates to VMs should **always** be rolling and the update process should be abstracted from the DevOps engineers. Want a new version of Kubernetes? Just bump the version in cluster configuration repo and commit changes. Let the tooling (CI + cloud provider interface) to handle the rest.
-
-We've gone a long way from every tech company managing its own data centers. And there's no reason to not go *all the way* with container-based infrastructure.
-
-A streamlined DevOps experience should be the norm, not the exception.
