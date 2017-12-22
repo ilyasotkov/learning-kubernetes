@@ -1,11 +1,12 @@
-# A advanced GKE cluster using Terraform
+# An advanced GKE cluster using Terraform
 
-In `gke` directory, we have a pretty minimal GKE cluster. This project tries to use *everything* Terraform has to offer.
+This cluster tries to use *everything* both Terraform and Terraform GCP provider have to offer.
 
 Possible features:
 
-- Use Terraform modules
-- Use Terragrunt (remote state + state locking)
-- Automate most of the `automation.md` tasks
-- Handle IAM
-- Handle DNS
+- [x] Use Terraform modules
+- [ ] Use Terragrunt (remote state + state locking)
+- [ ] Automate most of the `automation.md` tasks
+- [ ] Output useful variables
+- [ ] Handle IAM
+- [ ] Handle DNS
