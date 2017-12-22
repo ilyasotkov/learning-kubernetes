@@ -3,7 +3,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [Introduction to Kubernetes](#introduction-to-kubernetes)
-	- [What is Kubernetes? 🤔](#what-is-kubernetes-)
+	- [What is Kubernetes?](#what-is-kubernetes-)
 	- [What are the benefits of using Kubernetes?](#what-are-the-benefits-of-using-kubernetes)
 	- [Kubernetes inputs and outputs](#kubernetes-inputs-and-outputs)
 		- [Inputs](#inputs)
@@ -12,7 +12,7 @@
 
 <!-- /TOC -->
 
-## What is Kubernetes? 🤔
+## What is Kubernetes?
 
 Kubernetes is a platform for consuming cloud compute, storage, and networking resources. Kubernetes is also known as the most popular way to bring containerized (dockerized) software to production at scale.
 
