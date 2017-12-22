@@ -1,10 +1,10 @@
 # An advanced GKE cluster using Terraform
 
-## Introduction and features
+## Introduction
 
 This cluster tries to use *everything* both Terraform and Terraform GCP provider have to offer.
 
-Possible features:
+## Features
 
 - [x] Use Terraform modules
 - [ ] Use Terragrunt (remote state + state locking)
@@ -14,8 +14,6 @@ Possible features:
 - [ ] Handle DNS
 
 ## Directory structure
-
-TODO
 
 ```
 .
