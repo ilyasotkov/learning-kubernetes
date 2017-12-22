@@ -4,7 +4,8 @@ provider "google" {
 }
 
 module "gke_cluster" {
-  source = "../modules/gke-cluster"
+  source = "../../modules/gke-cluster"
   cluster_name = "my-k8s-cluster"
   nodepool_name = "my-k8s-np"
+  nodepool_machine_type = "n1-highcpu-2"
 }
