@@ -7,12 +7,14 @@ This cluster tries to use *everything* both Terraform and Terraform GCP provider
 ## Features
 
 - [x] Use Terraform modules
+- [ ] Use a fully containerized local client
 - [ ] Use versioned Terraform modules
 - [ ] Use Terraform remote state with encryption
 - [ ] Automate most of the `automation.md` tasks
 - [ ] Output useful variables
 - [ ] Handle IAM
-- [ ] Handle DNS
+- [ ] Use CloudFlare via Terraform Provider [DNS](https://www.terraform.io/docs/providers/cloudflare/index.html)
+- [] Use Google DNS via Terraform 
 
 ## Directory structure
 
