@@ -7,9 +7,9 @@
 	- [Everything as code](#everything-as-code)
 	- [The future of Kubernetes in DevOps (we're not there yet)](#the-future-of-kubernetes-in-devops-were-not-there-yet)
 		- [Simple worflow](#simple-worflow)
-		- [Responsibilities](#responsibilities)
+		- [Separation of responsibilities](#separation-of-responsibilities)
 			- [Cloud provider responsiblities](#cloud-provider-responsiblities)
-			- [Our responsiblities](#our-responsiblities)
+			- [Developer responsiblities](#developer-responsiblities)
 		- [Humans deal with logical abstractions, not technical constraints](#humans-deal-with-logical-abstractions-not-technical-constraints)
 			- [Cluster updates](#cluster-updates)
 	- [Up next](#up-next)
@@ -41,13 +41,13 @@ You're therefore free to use a text editor of your choice (like Atom or Vim) and
 1. Declaratively (via 1 command) create a cluster and deploy all supporting tools (Ingress Controller + Lego + Docker image registry + Jenkins / Drone).
 2. Deploy a hello-world app.
 
-### Responsibilities
+### Separation of responsibilities
 
 #### Cloud provider responsiblities
 
 A cloud provider of our choice manages all hardware (data centers). It also monitors compute / memory / storage resource pressure and auto-scales VMs when needed. It's designed for ~100% availability and ~100% durability.
 
-#### Our responsiblities
+#### Developer responsiblities
 
 On our part (as a user of a cloud provider), we manage a cluster git repository and handle all required changes to the cluster state by making changes to cluster files in the repository. Changes are then handled via a CI pipeline (git-based workflow, either *git-flow* or *GitHub Flow*):
 
