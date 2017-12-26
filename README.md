@@ -8,7 +8,9 @@
 
 A guide to administering and using Kubernetes clusters declaratively
 
-⚠️ This is a work in progress
+⚠️ This is a work in progress.
+
+Examples of clusters and Helm charts / releases have moved to <https://github.com/ilyasotkov/exekube>.
 
 ## ⚗️ Labs
 
