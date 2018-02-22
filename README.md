@@ -62,6 +62,7 @@ Examples of clusters and Helm charts / releases have been moved to <https://gith
 | Kubernetes API Reference | https://kubernetes.io/docs/api-reference/v1.8/ |
 | Helm Documentation | https://docs.helm.sh/ |
 | ramitsurana/awesome-kubernetes | https://github.com/ramitsurana/awesome-kubernetes |
+| Hackr.io - Curated Resources | https://hackr.io/tutorials/learn-kubernetes |
 
 
 ## ✅ Updates and news
